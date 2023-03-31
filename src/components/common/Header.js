@@ -31,6 +31,9 @@ const Header = () => {
             <Link className="nav-link" to="/about">
               About us
             </Link>
+            <Link className="nav-link" to="/service">
+              Services
+            </Link>
             <Link className="nav-link" to="/appointment">
               Book an appoinment
             </Link>

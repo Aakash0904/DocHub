@@ -19,6 +19,7 @@
         max-width: 100%;
     }
 }
+
 :root {
     --primary-color: rgba(0, 124, 157, 0.9);
     --helper-color: rgba(0, 160, 156, 0.9);
@@ -51,11 +52,12 @@ body {
 
 .heading p {
     font-size: 20px;
-    font-weight:510;
+    font-weight: 510;
     /* color: black; */
-    color: var(--helper-color); 
+    color: var(--helper-color);
     margin-bottom: 50px;
 }
+
 .read-more-btn {
     /* display: inline-block;
     color: #fff;
@@ -73,10 +75,12 @@ body {
     background-color: #ffffff;
     text-decoration: none;
 }
-.read-more-btn:hover{
-        background-color: var(--primary-color);
-        color: #ffffff;
+
+.read-more-btn:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
 }
+
 .why {
     background-color: whitesmoke;
 }
@@ -99,6 +103,7 @@ ul {
     line-height: 1.5;
     margin: 15px 0px;
 }
+
 .heading3 {
     text-align: center;
     margin-top: 25px;
@@ -123,7 +128,8 @@ ul {
     margin-top: 25px;
     margin-left: 20px;
 }
-.card-body h5{
+
+.card-body h5 {
     color: var(--helper-color);
 }
 
@@ -205,6 +211,7 @@ ul {
 .about-us-section .heading {
     margin: 0 auto;
 }
+
 .common-title .heading {
     /* color: var(--heading-color); */
     font-size: 36px;
