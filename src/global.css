@@ -4,6 +4,9 @@
     --background-color: rgb(236, 236, 236);
   }
  
+  .navbar img{
+    margin-left: 15px;
+  }
 
 /* @media screen and (min-width: 601px) {
     h1 {
@@ -51,7 +54,7 @@
       display: none;
       height: 5px;
   }
-.img_bg{
+.img_bg, .p_bg{
   display: none;
 }
   .works p {

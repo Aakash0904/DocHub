@@ -13,6 +13,10 @@ ul {
 /* .navbar-nav li a{
     color: white;
 } */
+
+.i h1{
+    margin-left: 15px;
+}
 h2 {
     text-align: center;
     padding-bottom: 30px;
@@ -361,8 +365,8 @@ a {
     /* margin-top: 10px; */
     /* top: 956px; */
     /* opacity: 0.9; */
-    margin-top: 215px;
-    right: 50px;
+    margin-top: 200px;
+    left: 35px;
     /* z-index: 0; */
     width: 600px;
     height: 300px;
@@ -370,6 +374,9 @@ a {
 
 .third {
     padding-top: 70px;
+}
+.third h2{
+    z-index: 0;
 }
 
 .fr_img {

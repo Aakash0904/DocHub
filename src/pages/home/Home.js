@@ -14,9 +14,10 @@ import sec_bg from "../../assets/Images/section-bg.png";
 import doc from "../../assets/Images/img-bg.png";
 import doc_bg from "../../assets/Images/img-01-bg.jpg";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <body>
+      {console.log(props?.data)}
       <section className="i">
         <div className="onimg">
           <img src={banner} className="img-fluid" />
@@ -32,13 +33,40 @@ const Home = () => {
             className="form-control text-area"
             // id="exampleFormControlSelect1"
           >
-            <option>Location</option>
-            <option>London</option>
-            <option>Boston</option>
-            <option>Mumbai</option>
-            <option>New York</option>
-            <option>Toronto</option>
-            <option>Paris</option>
+            <option>Select District</option>
+            <option>Ahmedabad</option>
+            <option>Amreli</option>
+            <option>Anand</option>
+            <option>Aravali</option>
+            <option>Banaskantha</option>
+            <option>Bharuch</option>
+            <option>Bhavnagar</option>
+            <option>Botad</option>
+            <option>Chota Udaipur</option>
+            <option>Dahod</option>
+            <option>Dang</option>
+            <option>Devbhumi Dwarka</option>
+            <option>Gandhinagar</option>
+            <option>Gir Somnath</option>
+            <option>Jamnagar</option>
+            <option>Junagadh</option>
+            <option>Kheda</option>
+            <option>Kutch</option>
+            <option>Mahisagar</option>
+            <option>Mehsana</option>
+            <option>Morbi</option>
+            <option>Narmada</option>
+            <option>Navsari</option>
+            <option>Panchmahal</option>
+            <option>Patan</option>
+            <option>Porbander</option>
+            <option>Rajkot</option>
+            <option>Sabarkantha</option>
+            <option>Surat</option>
+            <option>Surendranagar</option>
+            <option>Tapi</option>
+            <option>Vadodara</option>
+            <option>Valsad</option>
           </select>
         </div>
         <div className="name">
@@ -46,13 +74,23 @@ const Home = () => {
             className="form-control text-area"
             // id="exampleFormControlSelect1"
           >
-            <option>Location</option>
-            <option>London</option>
-            <option>Boston</option>
-            <option>Mumbai</option>
-            <option>New York</option>
-            <option>Toronto</option>
-            <option>Paris</option>
+            <option>Select Specialist</option>
+            <option>Cardiology</option>
+            <option>Dentist</option>
+            <option>Dermatology</option>
+            <option>Dietician</option>
+            <option>Gynaecology</option>
+            <option>IVF Specialist</option>
+            <option>Nephrology</option>
+            <option>Neurology</option>
+            <option>Oncology</option>
+            <option>Ophthalmology</option>
+            <option>Orthology</option>
+            <option>Urology</option>
+            <option>Radiologist</option>
+            <option>Psychiatrist</option>
+            <option>Physical therapist</option>
+            <option>Pediatrician</option>
           </select>
         </div>
       </div>

@@ -20,18 +20,18 @@ const About = () => {
         <div className="container">
           <div className="row align-items-center">
             <div
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              className="col col-lg-6 "
+              // data-aos="fade-up"
+              // data-aos-duration="1200"
+              className="col-lg-6 "
             >
               <div className="about-img-two">
-                <img decoding="async" src={abt_img} alt="Image" />
+                <img  src={abt_img} alt="Image" />
               </div>
             </div>
             <div
-              data-aos="fade-up"
-              data-aos-duration="1600"
-              className="col col-lg-6 "
+              // data-aos="fade-up"
+              // data-aos-duration="1600"
+              className=" col-lg-6 "
             >
               <div className="about-content-two">
                 <h2>Tackle The Challenge Of Delivering Health Care</h2>

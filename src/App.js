@@ -1,4 +1,8 @@
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./global.css";
+import ConList from "./pages/list/ConList";
+import "./pages/list/ConList.css";
 import "./components/common/footer.css";
 import "./pages/home/home.css";
 import "./pages/about/about.css";
@@ -12,16 +16,36 @@ import Blog from "./pages/blog/Blog";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
+  const [data, setData] =useState({});
+
+  const getApi=()=>{
+    axios.get('http://localhost:3004/hospital')
+    .then((result)=>{
+      console.log("result aa gya bhaya", result)
+      setData(result.data);
+    })
+  };
+
+  useEffect( ()=>{
+
+    console.log('ram ram bhaya');
+    getApi();
+  }, []);
+
   return (
   <>
+
+{/* <ConList/> */}
   <BrowserRouter>
   <Header/>
   <Routes>
-  <Route path="home" element={<Home />}/>
+          <Route exact path="/" element={<Home />} />
+          <Route path="home" element={<Home data={data} />} />
           <Route path="about" element={<About />} />
           <Route path="appointment" element={<Appointment />} />
           <Route path="blog" element={<Blog />} />
-  </Routes>
+        </Routes>
+      
   <Footer/>
   </BrowserRouter>
   </>

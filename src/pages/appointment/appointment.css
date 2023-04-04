@@ -47,7 +47,8 @@ body {
 
 .image img {
     width: auto;
-    height: auto;
+    height: 450px;
+    margin-top: 95px;
 }
 
 header {
@@ -57,16 +58,16 @@ header {
     z-index: 1;
 }
 
-.form {
+form {
     flex: 1;
     order: 2;
     max-width: 400px;
-    margin: 20px;
+    margin-bottom: 20px;
 
 }
 
 .form h2 {
-    margin: 15px;
+    /* margin: 15px; */
     text-align: center;
     color: var(--primary-color);
 }
@@ -117,12 +118,13 @@ footer {
 
     .image img {
         width: 100%;
+        height: auto;
+        margin: 0;
     }
-
     .image {
         margin: 1;
     }
-
+ 
     .form {
         margin: 20px auto;
     }
