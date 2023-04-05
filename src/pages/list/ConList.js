@@ -23,7 +23,7 @@ const ConList = ()=> {
       </div>
       <div className="col-3 mx-auto banner">
 
-        <form classNameName="form">
+        <form className="form1">
           <h3 className="mt-1">Assistence, Over Call</h3>
           <div className="form-group mt-1">
             <label for="exampleInputPassword1" className="mt-1">Full Name</label>

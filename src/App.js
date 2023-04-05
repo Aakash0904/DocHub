@@ -13,24 +13,24 @@ import Appointment from "./pages/appointment/Appointment";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Blog from "./pages/blog/Blog";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 function App() {
-  const [data, setData] =useState({});
+  // const [data, setData] =useState({});
 
-  const getApi=()=>{
-    axios.get('http://localhost:3004/hospital')
-    .then((result)=>{
-      console.log("result aa gya bhaya", result)
-      setData(result.data);
-    })
-  };
+  // const getApi=()=>{
+  //   axios.get('http://localhost:3004/doctors')
+  //   .then((result)=>{
+  //     console.log("result bht khrab aa bhaya", result)
+  //     setData(result.data);
+  //   })
+  // };
 
-  useEffect( ()=>{
+  // useEffect( ()=>{
 
-    console.log('ram ram bhaya');
-    getApi();
-  }, []);
+  //   console.log('ram ram bhaya');
+  //   getApi();
+  // }, []);
 
   return (
   <>
@@ -39,11 +39,13 @@ function App() {
   <BrowserRouter>
   <Header/>
   <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="home" element={<Home data={data} />} />
+          {/* <Route exact path="/" element={<Home />} /> */}
+          <Route path="" element={<Navigate to="home" />}/>
+          <Route path="home" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="appointment" element={<Appointment />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="conList" element={<ConList />} />
         </Routes>
       
   <Footer/>

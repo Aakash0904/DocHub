@@ -25,7 +25,7 @@ const Header = () => {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav">
-            <Link className="nav-link " aria-current="page" to="/home">
+            <Link className="nav-link"  to="/home">
               Home
             </Link>
             <Link className="nav-link" to="/about">

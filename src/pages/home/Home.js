@@ -1,4 +1,6 @@
 import React from "react";
+import SpecialityList from "../../components/common/SpecialityList"
+import LocationList from "../../components/common/LocationList"
 
 // import Header from "../../components/common/Header";
 // import logo from "../../assets/images/main_logo.png";
@@ -13,6 +15,7 @@ import cir3 from "../../assets/Images/circle-3.png";
 import sec_bg from "../../assets/Images/section-bg.png";
 import doc from "../../assets/Images/img-bg.png";
 import doc_bg from "../../assets/Images/img-01-bg.jpg";
+// import LocationList from "../../components/common/LocationList";
 
 const Home = (props) => {
   return (
@@ -29,7 +32,7 @@ const Home = (props) => {
       </section>
       <div className="no-gutters d-flex justify-content-center search">
         <div className="loc">
-          <select
+          {/* <select
             className="form-control text-area"
             // id="exampleFormControlSelect1"
           >
@@ -67,31 +70,14 @@ const Home = (props) => {
             <option>Tapi</option>
             <option>Vadodara</option>
             <option>Valsad</option>
-          </select>
+          </select> */}
+        <SpecialityList />
         </div>
-        <div className="name">
-          <select
-            className="form-control text-area"
-            // id="exampleFormControlSelect1"
-          >
-            <option>Select Specialist</option>
-            <option>Cardiology</option>
-            <option>Dentist</option>
-            <option>Dermatology</option>
-            <option>Dietician</option>
-            <option>Gynaecology</option>
-            <option>IVF Specialist</option>
-            <option>Nephrology</option>
-            <option>Neurology</option>
-            <option>Oncology</option>
-            <option>Ophthalmology</option>
-            <option>Orthology</option>
-            <option>Urology</option>
-            <option>Radiologist</option>
-            <option>Psychiatrist</option>
-            <option>Physical therapist</option>
-            <option>Pediatrician</option>
-          </select>
+        <LocationList/>
+        <div className="srch">
+        <a role="button" href="conList">
+          <i className="fa fa-search"></i>
+        </a>
         </div>
       </div>
       <section className="container third">

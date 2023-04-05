@@ -20,25 +20,25 @@ const Appointment = () =>{
         <div className="form container ">
 
           <h2>Book an Appointment</h2>
-          <form>
+          <form className="appoinment_form">
             <input type="text" id="name" value={val?.name} name="name" placeholder="Enter patient's name" onChange={(e)=>handleChange(e)} required/>
       
             <input type="tel" id="phone" name="phone" value={val?.phone} placeholder="Enter your phone number" onChange={(e)=>handleChange(e)} required/>
             <input type="datetime-local" id="date" name="date" required/>
-            <select name="text" id="name">
-              <option value="hospitals">Choose prefferred hospital</option>
-              <option value="hospitals">1</option>
-              <option value="hospitals">2</option>
-              <option value="hospitals">3</option>
-              <option value="hospitals">4</option>
+            <select name="text">
+              <option value="hospitals" className="hosopt">Choose prefferred hospital</option>
+              <option value="hospitals" className="hos">hospitals</option>
+              <option value="hospitals" className="hos">hospitals</option>
+              <option value="hospitals" className="hos">hospitals</option>
+              <option value="hospitals" className="hos">hospitals</option>
             </select>
     
-            <select name="text" id="name">
-              <option value="hospitals">Choose prefferred Doctor (if any)</option>
-              <option value="hospitals">1</option>
-              <option value="hospitals">2</option>
-              <option value="hospitals">3</option>
-              <option value="hospitals">4</option>
+            <select name="text">
+              <option value="doctor">Choose prefferred Doctor (if any)</option>
+              <option value="doctor">doctors</option>
+              <option value="doctor">doctors</option>
+              <option value="doctor">doctors</option>
+              <option value="doctor">doctors</option>
             </select>
          
             <input type="submit" value="Book Appointment"/>
