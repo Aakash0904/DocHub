@@ -17,6 +17,13 @@ ul {
     margin-left: 15px;
 }
 
+.srch {
+    color: var(--font-color);
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
 h2 {
     text-align: center;
     padding-bottom: 30px;

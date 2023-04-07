@@ -55,6 +55,11 @@ const Home = () => {
             <option>Paris</option>
           </select>
         </div>
+        <div className="srch">
+          <a role="button" href="#">
+            <i className="fa fa-search"></i>
+          </a>
+        </div>
       </div>
       <section className="container third">
         <div className="row">
