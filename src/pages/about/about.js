@@ -1,5 +1,5 @@
 import React from "react";
-import abt_img from "../../assests/images/abt_img_1.jpg";
+import abt_img from "../../assests/images/banner6.jpg";
 import explore from "../../assests/images/explore.png";
 import match from "../../assests/images/match.png";
 import arrange from "../../assests/images/arrange.png";
@@ -7,17 +7,26 @@ import treat from "../../assests/images/treat.png";
 import patients from "../../assests/images/patients.svg";
 import hospitals from "../../assests/images/hospitals.svg";
 import doctors from "../../assests/images/doctors.svg";
+// import about from "../../assests/images/01_About-1.jpg";
 
 const About = () => {
   return (
     <body>
       {/* <h1>About us</h1> */}
-      <div className="heading">
+      {/* <div className="heading">
         <h1>About Dochub</h1>
         <p>Take A Right Step For Your Life.</p>
-      </div>
+      </div> */}
+      <section>
+        <div className="main-image">
+          <div className="bannertext">
+            <h1>About Us</h1>
+          </div>
+        </div>
+      </section>
+      <br/>
       <section className="about-area-two">
-        <div className="container-fluid">
+        <div className="container">
           <div className="row align-items-center">
             <div
               // data-aos="fade-up"
@@ -51,12 +60,16 @@ const About = () => {
                   platform is user-friendly and efficient for both patients and
                   providers.
                 </p>
-                <button className="read-more-btn">Read More</button>
+                {/* <button className="read-more-btn">Read More</button> */}
               </div>
             </div>
           </div>
         </div>
       </section>
+      {/* <div class="container-fluid"> */}
+      {/* <img src={about} alt="..." />
+        <div className="center">About Us</div> */}
+
       <div className="functions">
         <h2>The Simplest Interface for Finding Healthcare</h2>
       </div>
@@ -183,7 +196,9 @@ const About = () => {
           </div>
         </div>
       </section>
+      {/* </div> */}
       {/* <section id="appointment" class="choose-form-inner">
+
         </section> */}
     </body>
   );
