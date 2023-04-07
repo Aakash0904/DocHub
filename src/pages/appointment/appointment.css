@@ -5,35 +5,17 @@
 }
 
 body {
-    overflow-x: hidden;
-}
-
-.navbar-nav a {
-    color: var(--primary-color);
-    font-weight: 480;
-    font-size: 18px;
-    margin-left: 10px;
-    margin-right: 22px;
-}
-
-
-
-.nav-link:hover {
-    display: block;
-    color: white;
-    background-color: var(--primary-color);
-}
-
-body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 
 }
 
@@ -45,34 +27,29 @@ body {
 
 .image img {
     width: auto;
-    height: auto;
+    height: 450px;
+    margin-top: 95px;
 }
 
-header {
-    background-color: var(--background-color);
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-.form {
+.appoinment_form {
     flex: 1;
     order: 2;
     max-width: 400px;
-    margin: 20px;
+    margin-bottom: 20px;
+    color: #000;
 
 }
-
-.form h2 {
-    margin: 15px;
+.appoinment_form h2 {
+    /* margin: 15px; */
     text-align: center;
     color: var(--primary-color);
 }
 
-form {
+.appoinment_form {
     background-color: var(--primary-color);
     padding: 20px;
     border-radius: 10px;
+    color: #000;
     box-shadow: 0px 0px 0px 3px rgba(1, 1, 1, 0.182);
 }
 
@@ -86,16 +63,18 @@ textarea {
     border-radius: 5px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
+    
 }
 
 input[type="submit"] {
     background-color: white;
-    color: #7c7c7c;
+    /* color: #7c7c7c; */
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
 }
+option
 
 input[type="submit"]:hover,
 footer {
@@ -103,9 +82,14 @@ footer {
     color: white;
 }
 
-#date,
-#name {
-    color: #7c7c7c;
+input[type=datetime-local]:invalid::-webkit-datetime-edit {
+    color: #999;
+}
+
+
+
+.chooseopt{
+    color: blue;
 }
 
 @media only screen and (max-width: 768px) {
@@ -115,13 +99,14 @@ footer {
 
     .image img {
         width: 100%;
+        height: auto;
+        margin: 0;
     }
-
     .image {
         margin: 1;
     }
-
-    .form {
+ 
+    .appoinment_form {
         margin: 20px auto;
     }
 }

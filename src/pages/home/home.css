@@ -13,10 +13,16 @@ ul {
 /* .navbar-nav li a{
     color: white;
 } */
-.i h1 {
+
+.i h1{
     margin-left: 15px;
 }
-
+.srch{
+    color: var(--background-color);
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 8px;
+}
 h2 {
     text-align: center;
     padding-bottom: 30px;
@@ -151,7 +157,6 @@ option:checked {
 
 .text-area {
     background-color: #f5f8f9;
-
 }
 
 .search {
@@ -376,8 +381,7 @@ a {
 .third {
     padding-top: 70px;
 }
-
-.third h2 {
+.third h2{
     z-index: 0;
 }
 
@@ -454,3 +458,5 @@ a {
         height: 100%;
     }
 }
+
+

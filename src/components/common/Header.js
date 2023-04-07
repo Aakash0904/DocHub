@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assests/images/main_logo.png";
+import logo from "../../assets/Images/main_logo.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -25,7 +25,7 @@ const Header = () => {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav">
-            <Link className="nav-link " aria-current="page" to="/home">
+            <Link className="nav-link"  to="/home">
               Home
             </Link>
             <Link className="nav-link" to="/about">

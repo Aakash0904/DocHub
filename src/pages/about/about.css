@@ -31,21 +31,20 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
-    overflow-x: hidden;
 }
 
 body {
     background-color: white;
 }
 
-/* .heading {
+.heading {
     text-align: center;
     margin-top: 25px;
 }
 
 .heading h1 {
     font-size: 50px;
-    font-weight: 550;
+    /* font-weight: 550; */
     color: var(--primary-color);
     margin-bottom: 10px;
 }
@@ -53,10 +52,10 @@ body {
 .heading p {
     font-size: 20px;
     font-weight:510;
-    color: black;
+    /* color: black; */
     color: var(--helper-color); 
-    margin-bottom: 50px; */
-
+    margin-bottom: 50px;
+}
 .read-more-btn {
     /* display: inline-block;
     color: #fff;
@@ -247,18 +246,11 @@ p {
 .bggrn {
     background-color: #F5F8F9;
 }
-.about-area-two{
-    background-color: #f5f8f9;
-}
-.about-img-two{
-    padding-right: 20px;
-}
+
 .about-img-two img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 5px;
-    /* padding-right:15px; */
     width: 100%;
 }
 
@@ -338,45 +330,3 @@ img {
 img {
     border: 0;
 }
-/* .container{
-    /* position: relative; */
-    /* text-align: center;
-    color:#212529; */
-
-/* .center{
-    position: absolute;
-    font-size: 50px;
-    font-weight: 800;
-    background: #ffffff;
-    display: inline-block;
-    width: auto;
-    top: 50%;
-    left: 50%;
-    bottom: 71%;
-    transform: translate(-50%,-50%);
-} */
-.main-image{
-    position: relative;
-    background: url(../../assests/images/banner3.jpg) no-repeat center;
-    background-size: cover;
-    height: 500px;
-    overflow: hidden;
-    /* opacity: 0.8; */
-}
-.bannertext{
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    /* background: orange; */
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.bannertext h1{
-    font-size: 50px;
-    font-weight: 700;
-}
-
-
