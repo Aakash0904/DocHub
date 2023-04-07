@@ -1,0 +1,121 @@
+:root{
+    --primary-color: rgba(0,124,157,0.9);
+    --helper-color: rgba(0,160,156,0.9);
+    --background-color: rgb(236, 236, 236);
+  }
+ 
+  .navbar img{
+    margin-left: 15px;
+  }
+
+  
+.navbar-nav a {
+  color: var(--primary-color);
+  font-weight: 480;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 22px;
+}
+
+header {
+  background-color: var(--background-color);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+
+.nav-link:hover {
+  display: block;
+  color: white;
+  background-color: var(--primary-color);
+}
+
+/* @media screen and (min-width: 601px) {
+    h1 {
+        font-size: 15px;
+        margin-bottom: 90%;
+    }
+} */
+@media screen and (max-width: 820px) {
+  .onimg h1 {
+      font-size: 40px;
+      margin-bottom: 700px;
+      width: 400px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .onimg span {
+      font-size: 30px;
+      margin-bottom: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .onimg h1 {
+      font-size: 20px;
+      margin-bottom: 500px;
+
+      width: 150px;
+      /* display: inline; */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .onimg span {
+      font-size: 15px;
+      margin-bottom: 90%;
+  }
+
+  .step .arrow_1 {
+      display: none;
+      height: 5px;
+  }
+
+  .step .arrow_2 {
+      display: none;
+      height: 5px;
+  }
+.img_bg, .p_bg{
+  display: none;
+}
+  .works p {
+      /* width: 100px; */
+      /* height: 50px; */
+      display: flex;
+      text-align: center;
+      padding: 0;
+  }
+
+
+
+  .works {
+      height: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .onimg h1 {
+      font-size: 17px;
+      margin-bottom: 300px;
+      width: 150px;
+  }
+
+
+}
+
+@media screen and (max-width: 400px) {
+  .onimg span {
+      font-size: 13px;
+      margin-bottom: 90%;
+  }
+
+  /* @media only screen and (max-width: 400px) {
+
+  /* For mobile phones: */
+  col {
+      width: 100%;
+  }
+
+}
