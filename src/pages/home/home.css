@@ -13,12 +13,13 @@ ul {
 /* .navbar-nav li a{
     color: white;
 } */
+
 .i h1 {
     margin-left: 15px;
 }
 
 .srch {
-    color: var(--font-color);
+    color: var(--background-color);
     font-size: 25px;
     margin-left: 15px;
     margin-top: 8px;

@@ -1,4 +1,6 @@
 import React from "react";
+import SpecialityList from "../../components/common/SpecialityList";
+import LocationList from "../../components/common/LocationList";
 
 // import Header from "../../components/common/Header";
 // import logo from "../../assets/images/main_logo.png";
@@ -13,10 +15,12 @@ import cir3 from "../../assets/Images/circle-3.png";
 import sec_bg from "../../assets/Images/section-bg.png";
 import doc from "../../assets/Images/img-bg.png";
 import doc_bg from "../../assets/Images/img-01-bg.jpg";
+// import LocationList from "../../components/common/LocationList";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <body>
+      {console.log(props?.data)}
       <section className="i">
         <div className="onimg">
           <img src={banner} className="img-fluid" />
@@ -28,35 +32,50 @@ const Home = () => {
       </section>
       <div className="no-gutters d-flex justify-content-center search">
         <div className="loc">
-          <select
+          {/* <select
             className="form-control text-area"
             // id="exampleFormControlSelect1"
           >
-            <option>Location</option>
-            <option>London</option>
-            <option>Boston</option>
-            <option>Mumbai</option>
-            <option>New York</option>
-            <option>Toronto</option>
-            <option>Paris</option>
-          </select>
+            <option>Select District</option>
+            <option>Ahmedabad</option>
+            <option>Amreli</option>
+            <option>Anand</option>
+            <option>Aravali</option>
+            <option>Banaskantha</option>
+            <option>Bharuch</option>
+            <option>Bhavnagar</option>
+            <option>Botad</option>
+            <option>Chota Udaipur</option>
+            <option>Dahod</option>
+            <option>Dang</option>
+            <option>Devbhumi Dwarka</option>
+            <option>Gandhinagar</option>
+            <option>Gir Somnath</option>
+            <option>Jamnagar</option>
+            <option>Junagadh</option>
+            <option>Kheda</option>
+            <option>Kutch</option>
+            <option>Mahisagar</option>
+            <option>Mehsana</option>
+            <option>Morbi</option>
+            <option>Narmada</option>
+            <option>Navsari</option>
+            <option>Panchmahal</option>
+            <option>Patan</option>
+            <option>Porbander</option>
+            <option>Rajkot</option>
+            <option>Sabarkantha</option>
+            <option>Surat</option>
+            <option>Surendranagar</option>
+            <option>Tapi</option>
+            <option>Vadodara</option>
+            <option>Valsad</option>
+          </select> */}
+          <SpecialityList />
         </div>
-        <div className="name">
-          <select
-            className="form-control text-area"
-            // id="exampleFormControlSelect1"
-          >
-            <option>Location</option>
-            <option>London</option>
-            <option>Boston</option>
-            <option>Mumbai</option>
-            <option>New York</option>
-            <option>Toronto</option>
-            <option>Paris</option>
-          </select>
-        </div>
+        <LocationList />
         <div className="srch">
-          <a role="button" href="#">
+          <a role="button" href="conList">
             <i className="fa fa-search"></i>
           </a>
         </div>

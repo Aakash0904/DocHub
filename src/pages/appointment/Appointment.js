@@ -3,58 +3,67 @@ import appoint_bg_doc from "../../assets/Images/appoint_bg_doc.png";
 const Appointment = () => {
   const [val, setVal] = useState({});
   const handleChange = (e) => {
-    // console.log("hh", e.target.value);
     setVal({ ...val, [e.target.name]: e.target.value });
-    // setVal(e.target.val);
   };
+
   return (
     <body>
       <div className="container">
-        <div className=" row image">
+        <div className="image row">
           <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+            {console.log("inreturn", val)}
             <img src={appoint_bg_doc} alt="Medical Appointment Image" />
           </div>
           <div className="col-12 col-sm-12 col-md-12 col-lg-6">
-            <div className="form container">
-              {console.log(val)}
+            <div className="form container ">
               <h2>Book an Appointment</h2>
-              <form>
+              <form className="appoinment_form">
                 <input
-                  // onChange={handleChange}
                   type="text"
                   id="name"
+                  value={val?.name}
                   name="name"
                   placeholder="Enter patient's name"
-                  required
-                  value={val?.name}
                   onChange={(e) => handleChange(e)}
+                  required
                 />
+
                 <input
                   type="tel"
-                  // id="phone"
+                  id="phone"
                   name="phone"
                   value={val?.phone}
-                  onChange={(e) => handleChange(e)}
                   placeholder="Enter your phone number"
+                  onChange={(e) => handleChange(e)}
                   required
                 />
                 <input type="datetime-local" id="date" name="date" required />
-                <select name="text" id="name">
-                  <option value="hospitals">Choose prefferred hospital</option>
-                  <option value="hospitals">1</option>
-                  <option value="hospitals">2</option>
-                  <option value="hospitals">3</option>
-                  <option value="hospitals">4</option>
+                <select name="text">
+                  <option value="hospitals" className="hosopt">
+                    Choose prefferred hospital
+                  </option>
+                  <option value="hospitals" className="hos">
+                    hospitals
+                  </option>
+                  <option value="hospitals" className="hos">
+                    hospitals
+                  </option>
+                  <option value="hospitals" className="hos">
+                    hospitals
+                  </option>
+                  <option value="hospitals" className="hos">
+                    hospitals
+                  </option>
                 </select>
 
-                <select name="text" id="name">
-                  <option value="hospitals">
+                <select name="text">
+                  <option value="doctor">
                     Choose prefferred Doctor (if any)
                   </option>
-                  <option value="hospitals">1</option>
-                  <option value="hospitals">2</option>
-                  <option value="hospitals">3</option>
-                  <option value="hospitals">4</option>
+                  <option value="doctor">doctors</option>
+                  <option value="doctor">doctors</option>
+                  <option value="doctor">doctors</option>
+                  <option value="doctor">doctors</option>
                 </select>
 
                 <input type="submit" value="Book Appointment" />
