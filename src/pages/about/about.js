@@ -1,5 +1,5 @@
 import React from "react";
-import abt_img from "../../assets/Images/abt_img_1.jpg";
+import abt_img from "../../assets/Images/banner6.jpg";
 import explore from "../../assets/Images/explore.png";
 import match from "../../assets/Images/match.png";
 import arrange from "../../assets/Images/arrange.png";
@@ -12,10 +12,8 @@ const About = () => {
   return (
     <body>
       {/* <h1>About us</h1> */}
-      <div className="heading">
-        <h1>About Dochub</h1>
-        <p>Take A Right Step For Your Life.</p>
-      </div>
+        {/* <h1>About Dochub</h1>
+        <p>Take A Right Step For Your Life.</p> */}
       <section className="about-area-two">
         <div className="container">
           <div className="row align-items-center">
@@ -51,7 +49,7 @@ const About = () => {
                   platform is user-friendly and efficient for both patients and
                   providers.
                 </p>
-                <button className="read-more-btn">Read More</button>
+                {/* <button className="read-more-btn">Read More</button> */}
               </div>
             </div>
           </div>

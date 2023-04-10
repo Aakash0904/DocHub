@@ -220,7 +220,7 @@ option:checked {
     height: 80px;
 } */
 
-.card .card-flyer:hover img {
+/* .card .card-flyer:hover img {
     opacity: 0.8;
     -webkit-transform: scale(1.15);
     -moz-transform: scale(1.15);
@@ -254,7 +254,7 @@ option:checked {
     -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
     margin-top: 5px;
-}
+} */
 
 .Useful_link p a {
     text-decoration: none;
