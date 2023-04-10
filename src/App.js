@@ -16,21 +16,19 @@ import Blog from "./pages/blog/Blog";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 function App() {
-  // const [data, setData] =useState({});
+  const [data, setData] = useState({});
 
-  // const getApi=()=>{
-  //   axios.get('http://localhost:3004/doctors')
-  //   .then((result)=>{
-  //     console.log("result bht khrab aa bhaya", result)
-  //     setData(result.data);
-  //   })
-  // };
+  const getApi = () => {
+    axios.get("http://localhost:3004/doctors").then((result) => {
+      console.log("result bht khrab aa bhaya", result);
+      setData(result.data);
+    });
+  };
 
-  // useEffect( ()=>{
-
-  //   console.log('ram ram bhaya');
-  //   getApi();
-  // }, []);
+  useEffect(() => {
+    console.log("ram ram bhaya");
+    getApi();
+  }, []);
 
   return (
     <>
