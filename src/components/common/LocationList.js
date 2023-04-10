@@ -1,38 +1,36 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const LocationList = (props) => {
-    const [data, setData] =useState([]);
+  const [data, setData] = useState([]);
 
-    const getHospitalData=()=>{
-      axios.get('http://localhost:3004/hospitals')
-      .then((result)=>{
-        console.log("here's the data", result);
-       const specilalityArr =  result.data.map((item, index)=>{
-          return item.location
-        })
-        console.log("console_data",[...new Set(specilalityArr)]);
-        setData([...new Set(specilalityArr)]);
-      })
-    };
+  const getHospitalData = () => {
+    axios.get("http://localhost:3004/hospitals").then((result) => {
+      console.log("here's the data", result);
+      const specilalityArr = result.data.map((item, index) => {
+        return item.location;
+      });
+      console.log("console_data", [...new Set(specilalityArr)]);
+      setData([...new Set(specilalityArr)]);
+    });
+  };
 
-    useEffect( ()=>{
-      getHospitalData();
-    }, []);
+  useEffect(() => {
+    getHospitalData();
+  }, []);
 
   return (
-        <div className="name">
-          <select
-            className="form-control text-area"
-            // id="exampleFormControlSelect1"
-          >
-            {data && data?.map((item, index)=>{
-              return(
-              <option>{item}</option>
-              )
-            })}
-          </select>
-          </div>
+    <div className="name">
+      <select
+        className="form-control text-area"
+        // id="exampleFormControlSelect1"
+      >
+        {data &&
+          data?.map((item, index) => {
+            return <option>{item}</option>;
+          })}
+      </select>
+    </div>
   );
 };
 export default LocationList;
