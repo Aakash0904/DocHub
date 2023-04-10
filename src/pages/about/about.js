@@ -1,12 +1,12 @@
 import React from "react";
-import abt_img from "../../assets/Images/abt_img_1.jpg";
-import explore from "../../assets/Images/explore.png";
-import match from "../../assets/Images/match.png";
-import arrange from "../../assets/Images/arrange.png";
-import treat from "../../assets/Images/treat.png";
-import patients from "../../assets/Images/patients.svg";
-import hospitals from "../../assets/Images/hospitals.svg";
-import doctors from "../../assets/Images/doctors.svg";
+import abt_img from "../../assests/images/abt_img_1.jpg";
+import explore from "../../assests/images/explore.png";
+import match from "../../assests/images/match.png";
+import arrange from "../../assests/images/arrange.png";
+import treat from "../../assests/images/treat.png";
+import patients from "../../assests/images/patients.svg";
+import hospitals from "../../assests/images/hospitals.svg";
+import doctors from "../../assests/images/doctors.svg";
 
 const About = () => {
   return (
