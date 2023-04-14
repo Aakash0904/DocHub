@@ -1,4 +1,6 @@
 import React from "react";
+import "./about.css";
+
 import abt_img from "../../assets/Images/abt_img_1.jpg";
 import explore from "../../assets/Images/explore.png";
 import match from "../../assets/Images/match.png";

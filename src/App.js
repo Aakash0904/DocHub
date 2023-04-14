@@ -3,9 +3,7 @@ import axios from "axios";
 import "./global.css";
 import ConList from "./pages/list/ConList";
 import "./pages/list/ConList.css";
-import "./components/common/footer.css";
-import "./pages/home/home.css";
-import "./pages/about/about.css";
+// import "./components/common/footer.css";
 import "./pages/appointment/appointment.css";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
@@ -16,21 +14,21 @@ import Blog from "./pages/blog/Blog";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 function App() {
-  // const [data, setData] =useState({});
+  const [data, setData] =useState({});
 
-  // const getApi=()=>{
-  //   axios.get('http://localhost:3004/doctors')
-  //   .then((result)=>{
-  //     console.log("result bht khrab aa bhaya", result)
-  //     setData(result.data);
-  //   })
-  // };
+  const getApi=()=>{
+    axios.get('http://localhost:3004/doctors')
+    .then((result)=>{
+      console.log("result bht khrab aa bhaya", result)
+      setData(result.data);
+    })
+  };
 
-  // useEffect( ()=>{
+  useEffect( ()=>{
 
-  //   console.log('ram ram bhaya');
-  //   getApi();
-  // }, []);
+    console.log('ram ram bhaya');
+    getApi();
+  }, []);
 
   return (
   <>

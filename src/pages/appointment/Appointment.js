@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import axios from "axios";
 import appoint_bg_doc from "../../assets/Images/appoint_bg_doc.png"
 const Appointment = () =>{
   const [val, setVal] =useState({});
@@ -6,6 +7,15 @@ const Appointment = () =>{
     // console.log("code easier", e.target.value);
     setVal({...val, [e.target.name]:e.target.value});
   };
+
+
+  const handleSubmit= () =>{
+    axios.post('http://localhost:3004/appointment', val).then((result)=>{
+      console.log(result)
+      // setVal(result.val);
+    })
+  };
+
 
     return(
         <body>
@@ -24,7 +34,7 @@ const Appointment = () =>{
             <input type="text" id="name" value={val?.name} name="name" placeholder="Enter patient's name" onChange={(e)=>handleChange(e)} required/>
       
             <input type="tel" id="phone" name="phone" value={val?.phone} placeholder="Enter your phone number" onChange={(e)=>handleChange(e)} required/>
-            <input type="datetime-local" id="date" name="date" required/>
+            <input type="date" id="date" name="date" onChange={(e)=>handleChange(e)} required/>
             <select name="text">
               <option value="hospitals" className="hosopt">Choose prefferred hospital</option>
               <option value="hospitals" className="hos">hospitals</option>
@@ -33,7 +43,7 @@ const Appointment = () =>{
               <option value="hospitals" className="hos">hospitals</option>
             </select>
     
-            <select name="text">
+            <select name="text1">
               <option value="doctor">Choose prefferred Doctor (if any)</option>
               <option value="doctor">doctors</option>
               <option value="doctor">doctors</option>
@@ -41,7 +51,7 @@ const Appointment = () =>{
               <option value="doctor">doctors</option>
             </select>
          
-            <input type="submit" value="Book Appointment"/>
+            <input type="submit" onClick={handleSubmit} value="Book Appointment"/>
           </form>
         </div>
         </div>
