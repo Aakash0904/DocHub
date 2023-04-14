@@ -29,7 +29,7 @@ const About = () => {
             <div
               // data-aos="fade-up"
               // data-aos-duration="1200"
-              className="col-lg-6 "
+              className="col-md-6 "
             >
               <div className="about-img-two">
                 <img src={abt_img} alt="Image" />
@@ -38,7 +38,7 @@ const About = () => {
             <div
               // data-aos="fade-up"
               // data-aos-duration="1600"
-              className=" col-lg-6 "
+              className=" col-md-6"
             >
               <div className="about-content-two">
                 <p>
