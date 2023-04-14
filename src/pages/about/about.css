@@ -220,16 +220,6 @@ ul {
     margin: 0 auto;
     display: block;
 }
-
-p {
-    hyphens: auto;
-    color: var(--font-color);
-    /* margin-bottom: 10px; */
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 400;
-}
-
 .cct p {
     width: 58%;
     margin: 0 auto;
@@ -252,6 +242,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    float: left;
 }
 
 .about-content-two .top-title {
@@ -272,16 +263,19 @@ h2 {
     line-height: 1.4;
 }
 
-.about-content-two h2 {
+/* .about-content-two h2 {
     font-size: 35px;
     margin-bottom: 20px;
-}
+} */
 
-p {
-    font-size: 15px;
-    color: var(--font-color);
+.about-content-two p {
+    font-size: 16px;
     margin-bottom: 15px;
     line-height: 1.8;
+    hyphens: auto;
+    color: var(--font-color);
+    font-weight: 400;
+    margin-bottom: 90px;
 }
 
 .statics {
@@ -329,4 +323,29 @@ img {
 
 img {
     border: 0;
+}
+.main-image{
+    position: relative;
+    background: url(../../assets/Images/banner3.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    overflow: hidden;
+    /* opacity: 0.8; */
+}
+.bannertext{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.bannertext h1{
+    font-size: 65px;
+    font-weight: 700;
+}
+.about-area-two{
+    background: var(--background-color);
 }
