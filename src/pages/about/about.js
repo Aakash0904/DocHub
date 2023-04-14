@@ -1,5 +1,5 @@
 import React from "react";
-import abt_img from "../../assets/Images/banner5.jpg";
+import abt_img from "../../assets/Images/abt_img_1.jpg";
 import explore from "../../assets/Images/explore.png";
 import match from "../../assets/Images/match.png";
 import arrange from "../../assets/Images/arrange.png";
@@ -12,35 +12,29 @@ const About = () => {
   return (
     <body>
       {/* <h1>About us</h1> */}
-      {/* <h1>About Dochub</h1>
-        <p>Take A Right Step For Your Life.</p> */}
-      <section>
-        <div className="main-image">
-          <div className="bannertext">
-            <h1>About Us</h1>
-          </div>
-        </div>
-      </section>
-      {/* <br/> */}
-      <h2>Tackle The Challenge Of Delivering Health Care</h2>
+      <div className="heading">
+        <h1>About Dochub</h1>
+        <p>Take A Right Step For Your Life.</p>
+      </div>
       <section className="about-area-two">
         <div className="container">
           <div className="row align-items-center">
             <div
               // data-aos="fade-up"
               // data-aos-duration="1200"
-              className="col-md-6 "
+              className="col-lg-6 "
             >
               <div className="about-img-two">
-                <img src={abt_img} alt="Image" />
+                <img  src={abt_img} alt="Image" />
               </div>
             </div>
             <div
               // data-aos="fade-up"
               // data-aos-duration="1600"
-              className=" col-md-6"
+              className=" col-lg-6 "
             >
               <div className="about-content-two">
+                <h2>Tackle The Challenge Of Delivering Health Care</h2>
                 <p>
                   Welcome to our appointment booking website! We are dedicated
                   to making healthcare more accessible and convenient for
@@ -57,7 +51,7 @@ const About = () => {
                   platform is user-friendly and efficient for both patients and
                   providers.
                 </p>
-                {/* <button className="read-more-btn">Read More</button> */}
+                <button className="read-more-btn">Read More</button>
               </div>
             </div>
           </div>
@@ -153,7 +147,6 @@ const About = () => {
           </div>
         </div>
       </section>
-      <br/>
       <section className="bg-white stats">
         <div className="width_77_per stats_div padding-20 border-none">
           <div className="row bottom_stats">
