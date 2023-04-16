@@ -11,7 +11,7 @@ body {
     overflow-x: hidden;
 }
 
-.container {
+.app_con {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -57,7 +57,7 @@ body {
 input[type="text"],
 select,
 input[type="tel"],
-input[type="datetime-local"],
+input[type="date"],
 textarea {
     width: 100%;
     padding: 10px;
@@ -66,6 +66,12 @@ textarea {
     margin-bottom: 20px;
 
 }
+
+.spec {
+    width: 100%;
+    display: block;
+}
+
 
 input[type="submit"] {
     background-color: white;

@@ -7,6 +7,7 @@ import "./components/common/footer.css";
 import "./pages/home/home.css";
 import "./pages/about/about.css";
 import "./pages/appointment/appointment.css";
+// import "./pages/blog/blog.css";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import Appointment from "./pages/appointment/Appointment";

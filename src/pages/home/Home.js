@@ -1,4 +1,6 @@
 import React from "react";
+import "./home.css";
+
 import SpecialityList from "../../components/common/SpecialityList";
 import LocationList from "../../components/common/LocationList";
 
@@ -18,6 +20,7 @@ import doc_bg from "../../assets/Images/img-01-bg.jpg";
 // import LocationList from "../../components/common/LocationList";
 
 const Home = (props) => {
+  const handleChange = () => {};
   return (
     <body>
       {console.log(props?.data)}
@@ -71,7 +74,9 @@ const Home = (props) => {
             <option>Vadodara</option>
             <option>Valsad</option>
           </select> */}
-          <SpecialityList />
+          <div className="name">
+            <SpecialityList handleChange={handleChange} />
+          </div>
         </div>
         <LocationList />
         <div className="srch">
