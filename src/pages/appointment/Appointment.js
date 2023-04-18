@@ -5,10 +5,11 @@ import DoctorsList from "../../components/common/DoctorsList";
 
 import appoint_bg_doc from "../../assets/Images/appoint_bg_doc.png";
 const Appointment = () => {
-  const [val, setVal] = useState({});
+  const [val, setVal] = useState({ specialist: "Oncologist" });
 
   const handleChange = (e) => {
     setVal({ ...val, [e.target.name]: e.target.value });
+    // handleFirstDropdownChange(event);
   };
 
   const handleSubmit = () => {
@@ -21,6 +22,7 @@ const Appointment = () => {
   return (
     <>
       <div className="container ">
+        {console.log("value", val)}
         <div className="image row">
           <div className="col-12 col-sm-12 col-md-12 col-lg-6">
             {console.log("inreturn", val)}
@@ -55,39 +57,11 @@ const Appointment = () => {
                   name="date"
                   required
                 />
-                {/* <select name="text" onChange={(e) => handleChange(e)}>
-                  <option value="hospitals" className="hosopt">
-                    Choose prefferred hospital
-                  </option>
-                  <option value="hospitals" className="hos">
-                    hospitals
-                  </option>
-                  <option value="hospitals" className="hos">
-                    hospitals
-                  </option>
-                  <option value="hospitals" className="hos">
-                    hospitals
-                  </option>
-                  <option value="hospitals" className="hos">
-                    hospitals
-                  </option>
-                </select> */}
-                <>
-                  <SpecialityList handleChange={handleChange} />
-                </>
-                <>
-                  <DoctorsList handleChange={handleChange} />
-                </>
 
-                {/* <select name="text1" onChange={(e) => handleChange(e)}>
-                  <option value="doctor">
-                    Choose prefferred Doctor (if any)
-                  </option>
-                  <option value="doctor">doctors</option>
-                  <option value="doctor">doctors</option>
-                  <option value="doctor">doctors</option>
-                  <option value="doctor">doctors</option>
-                </select> */}
+                <SpecialityList handleChange={handleChange} />
+                {console.log("console_val_change", val)}
+                <DoctorsList handleChange={handleChange} speciality={val} />
+
                 <></>
 
                 <input

@@ -1,6 +1,4 @@
 import React from "react";
-import "./home.css";
-
 import SpecialityList from "../../components/common/SpecialityList";
 import LocationList from "../../components/common/LocationList";
 

@@ -3,14 +3,18 @@ import axios from "axios";
 
 const SpecialityList = (props) => {
   const [data, setData] = useState([]);
+  // const [selectedValue, setSelectedValue] = useState("");
+  // const [secondDropdownOptions, setSecondDropdownOptions] = useState([]);
 
   const getHospitalData = () => {
-    axios.get("http://localhost:3004/hospitals").then((result) => {
+    axios.get("http://localhost:3004/doctors").then((result) => {
       console.log("here's the data", result);
       const specilalityArr = result.data.map((item, index) => {
         return item.speciality;
       });
-      console.log("console_data", [...new Set(specilalityArr)]);
+      console.log("console_data123", specilalityArr, [
+        ...new Set(specilalityArr),
+      ]);
       setData([...new Set(specilalityArr)]);
     });
   };
@@ -23,9 +27,11 @@ const SpecialityList = (props) => {
     <select
       className="form-control text-area"
       onChange={(e) => props.handleChange(e)}
-      name="specialist"
+      selectedValue
+      name="speciality"
       // id="exampleFormControlSelect1"
     >
+      <option>Choose secialist </option>;
       {data &&
         data?.map((item, index) => {
           return <option>{item}</option>;

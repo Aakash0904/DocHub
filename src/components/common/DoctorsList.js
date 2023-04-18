@@ -1,15 +1,25 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const DoctorsList = ({ handleChange }) => {
+const DoctorsList = ({ handleChange, speciality }) => {
   const [data, setData] = useState([]);
+  const [docSpeciality, setDocspeciality] = useState(speciality);
 
   const getDoctorData = () => {
     axios.get("http://localhost:3004/doctors").then((result) => {
-      const doctorsArr = result.data.map((item, index) => {
-        return item.name;
-      });
-      console.log("console_data", [...new Set(doctorsArr)]);
+      const filterredList = result.data.filter(
+        (itm, i) => itm.specialist === speciality
+      );
+      console.log("console_doc", speciality);
+      const doctorsArr =
+        filterredList &&
+        filterredList.map((item, index) => {
+          return item.name;
+        });
+      // const doctorsArr = result.data.map((item, index) => {
+      //   return item.name;
+      // });
+      console.log("console_data_doc", [...new Set(doctorsArr)]);
       setData([...new Set(doctorsArr)]);
     });
   };
@@ -20,7 +30,7 @@ const DoctorsList = ({ handleChange }) => {
 
   useEffect(() => {
     getDoctorData();
-  }, []);
+  }, [docSpeciality]);
 
   return (
     <select

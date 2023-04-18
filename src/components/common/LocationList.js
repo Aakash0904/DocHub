@@ -6,7 +6,7 @@ const LocationList = (props) => {
 
   const getHospitalData = () => {
     axios.get("http://localhost:3004/hospitals").then((result) => {
-      console.log("here's the data", result);
+      console.log("here's the data", result.data);
       const specilalityArr = result.data.map((item, index) => {
         return item.location;
       });
@@ -25,6 +25,7 @@ const LocationList = (props) => {
         className="form-control text-area"
         // id="exampleFormControlSelect1"
       >
+        <option disabled>Choose location </option>
         {data &&
           data?.map((item, index) => {
             return <option>{item}</option>;

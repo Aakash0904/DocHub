@@ -14,6 +14,8 @@ import Appointment from "./pages/appointment/Appointment";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Blog from "./pages/blog/Blog";
+import Signup from "./pages/privacy/signup";
+import Login from "./pages/privacy/login";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 function App() {
@@ -44,6 +46,8 @@ function App() {
           <Route path="appointment" element={<Appointment />} />
           <Route path="blog" element={<Blog />} />
           <Route path="conList" element={<ConList />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="login" element={<Login />} />
         </Routes>
 
         <Footer />

@@ -24,7 +24,7 @@ const Blog = () => {
     getNews();
     const interval = setInterval(() => {
       getNews();
-    }, 3000);
+    }, 30000);
     return () => clearInterval(interval);
   }, []);
   return (
@@ -42,12 +42,16 @@ const Blog = () => {
                   />
                   <div className="card-body">
                     <h6 className="card-title">
-                      {ndata.title.slice(0, 100).toUpperCase()}
+                      {ndata.title.slice(0, 55).toUpperCase()}
                     </h6>
                     <p className="card-text">
                       {ndata.description?.slice(0, 120)}
                     </p>
-                    <a href={ndata.url} className="btn btn-primary">
+                    <a
+                      href={ndata.url}
+                      className="btn btn-outline-primary"
+                      data-mdb-ripple-color="dark"
+                    >
                       Read more
                     </a>
                   </div>
