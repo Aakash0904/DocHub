@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import SpecialityList from "../../components/common/SpecialityList";
 import LocationList from "../../components/common/LocationList";
 
@@ -18,7 +19,26 @@ import doc_bg from "../../assets/Images/img-01-bg.jpg";
 // import LocationList from "../../components/common/LocationList";
 
 const Home = (props) => {
-  const handleChange = () => {};
+  const navigate = useNavigate();
+  const [searchData, setSearchData] = useState({
+    location: "Ahmedabad",
+    speciality: "Oncology",
+  });
+
+  const handleChange = (e) => {
+    setSearchData((prev) => {
+      return { ...prev, [e.target.name]: e.target.value };
+    });
+  };
+  const handleSearch = () => {
+    console.log("console_check", searchData);
+    navigate("/conList", {
+      state: {
+        loc: searchData?.location,
+        speciality: searchData?.speciality,
+      },
+    });
+  };
   return (
     <body>
       {console.log(props?.data)}
@@ -33,52 +53,16 @@ const Home = (props) => {
       </section>
       <div className="no-gutters d-flex justify-content-center search">
         <div className="loc">
-          {/* <select
-            className="form-control text-area"
-            // id="exampleFormControlSelect1"
-          >
-            <option>Select District</option>
-            <option>Ahmedabad</option>
-            <option>Amreli</option>
-            <option>Anand</option>
-            <option>Aravali</option>
-            <option>Banaskantha</option>
-            <option>Bharuch</option>
-            <option>Bhavnagar</option>
-            <option>Botad</option>
-            <option>Chota Udaipur</option>
-            <option>Dahod</option>
-            <option>Dang</option>
-            <option>Devbhumi Dwarka</option>
-            <option>Gandhinagar</option>
-            <option>Gir Somnath</option>
-            <option>Jamnagar</option>
-            <option>Junagadh</option>
-            <option>Kheda</option>
-            <option>Kutch</option>
-            <option>Mahisagar</option>
-            <option>Mehsana</option>
-            <option>Morbi</option>
-            <option>Narmada</option>
-            <option>Navsari</option>
-            <option>Panchmahal</option>
-            <option>Patan</option>
-            <option>Porbander</option>
-            <option>Rajkot</option>
-            <option>Sabarkantha</option>
-            <option>Surat</option>
-            <option>Surendranagar</option>
-            <option>Tapi</option>
-            <option>Vadodara</option>
-            <option>Valsad</option>
-          </select> */}
           <div className="name">
             <SpecialityList handleChange={handleChange} />
           </div>
         </div>
-        <LocationList />
+        <LocationList handleChange={handleChange} />
         <div className="srch">
-          <a role="button" href="conList">
+          <a role="button" onClick={handleSearch}>
+            {/* <button role="button" onClick={handleSearch}>
+            <i className="fa fa-search"></i>  
+          </button> */}
             <i className="fa fa-search"></i>
           </a>
         </div>

@@ -23,9 +23,12 @@ const LocationList = (props) => {
     <div className="name">
       <select
         className="form-control text-area"
+        name="location"
+        onChange={(e) => props.handleChange(e)}
+
         // id="exampleFormControlSelect1"
       >
-        <option disabled>Choose location </option>
+        <option>Choose location </option>
         {data &&
           data?.map((item, index) => {
             return <option>{item}</option>;

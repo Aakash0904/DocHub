@@ -1,5 +1,6 @@
 :root {
     --primary-color: rgba(0, 124, 157, 0.9);
+    --secondaryh-color: #015c5a;
     --helper-color: rgba(0, 160, 156, 0.9);
     --background-color: rgb(236, 236, 236);
     --font-color: #212529;
@@ -19,7 +20,7 @@ ul {
 }
 
 .srch {
-    color: var(--background-color);
+    color: var(--primary-color);
     font-size: 25px;
     margin-left: 15px;
     margin-top: 8px;
@@ -64,14 +65,13 @@ span {
     margin-top: 60px;
 }
 
-h3 {
+/* h3 {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 5px;
     color: var(--primary-color);
-    /* color: rgb(17, 164, 120); */
-    /* color: rgb(6, 136, 136); */
-}
+   
+} */
 
 h6 {
     font-size: 18px;
@@ -101,7 +101,8 @@ h6 p {
     /* left: 40%; */
     justify-content: right;
     /* display: flex; */
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: var(--secondaryh-color);
     /* color: #000000; */
 }
 
@@ -112,8 +113,8 @@ h6 p {
 
 h1 span {
     /* color: rgba(54, 87, 109, 255); */
-    color: #015c5a;
-    /* color: var(--primary-color); */
+    /* color: #015c5a; */
+    color: #ffffff;
 }
 
 

@@ -31,7 +31,7 @@ const SpecialityList = (props) => {
       name="speciality"
       // id="exampleFormControlSelect1"
     >
-      <option>Choose secialist </option>;
+      <option>Choose specialization </option>;
       {data &&
         data?.map((item, index) => {
           return <option>{item}</option>;

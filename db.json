@@ -517,28 +517,28 @@
     },
     {
       "name": "Dr. Bhumir Chauhan",
-      "speciality": "Nurology",
+      "speciality": "Neurology",
       "location": "Ahmedabad",
       "experience": "7 years",
       "description": "Ahmedabad-based Dr. Bhumir Chauhan is a well-known doctor specialising in Neurology. With 7 years of experience, He has been associated with various prestigious hospitals and clinics. Dr. Bhumir Chauhan is now working with Zydus Hospital, Ahmedabad. Some of the places where Dr. Bhumir Chauhan has worked in the past include Narayana Health City, Bangalore, Narayana Health City, Bangalore, LG Hospital & AMCMET Medical College, Ahmedabad, VS Hospital, Ahmedabad. Dr. Bhumir Chauhan specialises in Dementia Treatment, Epilepsy Treatment, Vertigo Treatment, stroke rehab, Nerve and Muscle Disorders, Neuromuscular Disorders. Beyond His affiliation with many hospitals, He has been professionally active in many other ways. He is a member of Ahmedabad Medical Association, Indian Medical Association (IMA). He graduated with a DNB - Neurology from Narayana Hrudayalaya Institute , Bangalore. Post that Dr. Bhumir Chauhan went on to take His MBBS from Smt NHL Municipal Medical college & Vadilal Sarabhai Hospital, Ahmedabad."
     },
     {
       "name": "Dr. Mahendra Singh Chouhan",
-      "speciality": "Nurology",
+      "speciality": "Neurology",
       "location": "Ahmedabad",
       "experience": "12 years",
       "description": "Dr. Mahendra Singh Chouhan is a renowned doctor in Ahmedabad. Dr. Mahendra Singh Chouhan specialises in Neurology. Dr. Mahendra Singh Chouhan has over 12 years of experience practising medicine in various hospitals and clinics. Dr. Mahendra Singh Chouhan specialises in Electroconvulsive Therapy (ECT), Surgery Of The Facial Nerve, CSF Rhinorrhoea Repair Surgery. In addition to affiliation with multiple hospitals, Dr. Mahendra Singh Chouhan has been professionally active in many other ways. Dr. Mahendra Singh Chouhan graduated with a MBBS from All India Institute of Medical Sciences, New Delhi. After that, Dr. Mahendra Singh Chouhan went on to do MCh - Neuro Surgery from All India Institute of Medical Sciences, New Delhi."
     },
     {
       "name": "Dr. Shuchit Pandey",
-      "speciality": "Nurology",
+      "speciality": "Neurology",
       "location": "Ahmedabad",
       "experience": "6 years",
       "description": "Dr. Shuchit Pandey is an esteemed doctor practising Neurology in Ahmedabad. Dr. Shuchit Pandey has more than 6 years of experience. Currently, Dr. Shuchit Pandey is working with [organization_doctor experience - id5]. Dr. Shuchit Pandey specialises in EMG/NCV and EEG. Besides being affiliated with many hospitals, Dr. Shuchit Pandey has been professionally active in other important ways. Dr. Shuchit Pandey graduated with a DM - Neurology from King Georges Medical College, Lucknow University. After that, Dr. Shuchit Pandey went on to do MBBS from BJMC Pune."
     },
     {
       "name": "Dr. Jigar Parekh",
-      "speciality": "Nurology",
+      "speciality": "Neurology",
       "location": "Ahmedabad",
       "experience": "4 years",
       "description": "Having worked with several hospitals, He has 3 years of relevant experience. Beyond His affiliation with many hospitals, He has been professionally active in many other ways. He completed His MBBS from RUHS College of Medical Sciences, Jaipur. Post that Dr. Dinesh S Saini went on to take His MD - General Medicine from RUHS College of Medical Sciences, Jaipur"
@@ -736,7 +736,19 @@
       "email": "mayur@123",
       "password": "123",
       "id": 3
-    }
+    },
+    [],
+    {
+      "email": "mayurpati7456@gmail.com",
+      "password": "qdqdqdq",
+      "id": 5
+    },
+    {
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur@123",
+      "id": 6
+    },
+    []
   ],
   "appoinment": [
     {

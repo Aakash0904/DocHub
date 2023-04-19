@@ -29,6 +29,7 @@ const Blog = () => {
   }, []);
   return (
     <div className="container pt-3 pb-3">
+      <h3 className="blog_heading">Healthcare Blogs</h3>
       <div className="row">
         {myData.map((ndata, index) => {
           return (
