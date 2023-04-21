@@ -8,8 +8,9 @@ const DoctorsList = ({ handleChange, speciality }) => {
   const getDoctorData = () => {
     axios.get("http://localhost:3004/doctors").then((result) => {
       const filterredList = result.data.filter(
-        (itm, i) => itm.specialist === speciality
+        (itm, i) => itm.speciality === speciality
       );
+
       console.log("console_doc", speciality);
       const doctorsArr =
         filterredList &&
@@ -30,7 +31,7 @@ const DoctorsList = ({ handleChange, speciality }) => {
 
   useEffect(() => {
     getDoctorData();
-  }, [docSpeciality]);
+  }, [docSpeciality, speciality]);
 
   return (
     <select
@@ -39,6 +40,7 @@ const DoctorsList = ({ handleChange, speciality }) => {
       onChange={(e) => handleChange(e)}
       // id="exampleFormControlSelect1"
     >
+      <option>Choose Doctor </option>;
       {data &&
         data?.map((item, index) => {
           return <option>{item}</option>;

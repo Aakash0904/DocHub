@@ -29,6 +29,7 @@ const SpecialityList = (props) => {
       onChange={(e) => props.handleChange(e)}
       selectedValue
       name="speciality"
+      required
       // id="exampleFormControlSelect1"
     >
       <option>Choose specialization </option>;

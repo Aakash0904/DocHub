@@ -3,451 +3,541 @@
     {
       "name": "Gujarat Cancer and Research Institute (GCRI)",
       "speciality": "Oncology",
+      "img": "gujarat-cancer.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Apollo CBCC Cancer Care",
       "speciality": "Oncology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "HCG Cancer Centre",
       "speciality": "Oncology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "CIMS Hospital",
       "speciality": "Oncology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Sterling Cancer Hospital",
       "speciality": "Oncology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Zydus Hospitals and Healthcare Research Pvt. Ltd.",
       "speciality": "Oncology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Shalby Hospitals",
       "speciality": "Oncology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Wockhardt Hospitals",
       "speciality": "Oncology",
+      "img": "apex-heart.png",
       "location": "Surat"
     },
     {
       "name": "Narayana Multispeciality Hospital",
       "speciality": "Oncology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Unicare Hospital",
       "speciality": "Oncology",
+      "img": "apex-heart.png",
       "location": "Surat"
     },
     {
       "name": "Wellspring IVF & Women's Hospital",
       "speciality": "IVF",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Sumiran Women's Hospital",
       "speciality": "IVF",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Bavishi Fertility Institute",
       "speciality": "IVF",
+      "img": "apex-heart.png",
       "location": "Surat"
     },
     {
       "name": "Sneh Hospitals and IVF Center",
       "speciality": "IVF",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Shree IVF Clinic",
       "speciality": "IVF",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Vijaya Maternity Home and Metro IVF Center",
       "speciality": "IVF",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Sunflower Women's Hospital",
       "speciality": "IVF",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Nova IVF Fertility",
       "speciality": "IVF",
+      "img": "apex-heart.png",
       "location": "Vadodara"
     },
     {
       "name": "Dr. Nisarg Dharaiya's IVF Clinic",
       "speciality": "IVF",
+      "img": "apex-heart.png",
       "location": "Rajkot"
     },
     {
       "name": "Wings IVF Women's Hospital",
       "speciality": "IVF",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "CIMS Hospital",
       "speciality": "Cardiology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Sterling Hospital",
       "speciality": "Cardiology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Apex Heart Institute",
       "speciality": "Cardiology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "SAL Hospital and Medical Institute",
       "speciality": "Cardiology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Zydus Hospitals and Healthcare Research Pvt. Ltd.",
       "speciality": "Cardiology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Shalby Hospitals",
       "speciality": "Cardiology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Narayana Multispeciality Hospital",
       "speciality": "Cardiology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Krishna Heart Institute",
       "speciality": "Cardiology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Shreeji Hospital",
       "speciality": "Cardiology",
+      "img": "apex-heart.png",
       "location": "Vadodara"
     },
     {
       "name": "Bhailal Amin General Hospital",
       "speciality": "Cardiology",
+      "img": "apex-heart.png",
       "location": "Vadodara"
     },
     {
       "name": "Shalby Hospitals",
       "speciality": "orthology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "HCG Hospital",
       "speciality": "orthology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "CIMS Hospital",
       "speciality": "orthology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Sterling Hospital",
       "speciality": "orthology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Narayana Multispeciality Hospital",
       "speciality": "orthology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Apollo Hospitals",
       "speciality": "orthology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Zydus Hospitals and Healthcare Research Pvt. Ltd.",
       "speciality": "orthology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Sanjivani Super Speciality Hospital",
       "speciality": "orthology",
+      "img": "apex-heart.png",
       "location": "Rajkot"
     },
     {
       "name": "Sterling Hospital",
       "speciality": "orthology",
+      "img": "apex-heart.png",
       "location": "Rajkot"
     },
     {
       "name": "Sunshine Global Hospital",
       "speciality": "orthology",
+      "img": "apex-heart.png",
       "location": "Vadodara"
     },
     {
       "name": "Sterling Hospital",
       "speciality": "Neurology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "CIMS Hospital",
       "speciality": "Neurology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "HCG Hospital",
       "speciality": "Neurology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Zydus Hospitals and Healthcare Research Pvt. Ltd.",
       "speciality": "Neurology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Narayana Multispeciality Hospital",
       "speciality": "Neurology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Shalby Hospitals",
       "speciality": "Neurology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Apollo Hospitals",
       "speciality": "Neurology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "NeuroGen Brain and Spine Institute",
       "speciality": "Neurology",
+      "img": "apex-heart.png",
       "location": "Surat"
     },
     {
       "name": "Advait Neuro-Care Pvt. Ltd.",
       "speciality": "Neurology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Arpan Neurology Center",
       "speciality": "Neurology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Shroff Eye Hospital",
       "speciality": "Ophthalmology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "C H Nagri Eye Hospital",
       "speciality": "Ophthalmology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Iladevi Cataract & IOL Research Centre",
       "speciality": "Ophthalmology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Raghudeep Eye Hospital",
       "speciality": "Ophthalmology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Centre for Sight",
       "speciality": "Ophthalmology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Drashti Netralaya",
       "speciality": "Ophthalmology",
+      "img": "apex-heart.png",
       "location": "Vadodara"
     },
     {
       "name": "Vasan Eye Care Hospital",
       "speciality": "Ophthalmology",
+      "img": "apex-heart.png",
       "location": "Vadodara"
     },
     {
       "name": "Eye-Q Super Specialty Eye Hospital",
       "speciality": "Ophthalmology",
+      "img": "apex-heart.png",
       "location": "Surat"
     },
     {
       "name": "Navkar Eye Care Hospital",
       "speciality": "Ophthalmology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Netradham Eye Hospital",
       "speciality": "Ophthalmology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "CIMS Hospital",
       "speciality": "nephrology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Sterling Hospital",
       "speciality": "nephrology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "HCG Hospital",
       "speciality": "nephrology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Narayana Multispeciality Hospital",
       "speciality": "nephrology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Zydus Hospitals and Healthcare Research Pvt. Ltd.",
       "speciality": "nephrology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Shalby Hospitals",
       "speciality": "nephrology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Apollo Hospitals",
       "speciality": "nephrology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Kidneyline Healthcare",
       "speciality": "nephrology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Gujarat Kidney Foundation",
       "speciality": "nephrology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Sanjivani Super Speciality Hospital",
       "speciality": "nephrology",
+      "img": "apex-heart.png",
       "location": "Rajkot"
     },
     {
       "name": "CIMS Hospital",
       "speciality": "urology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Shalby Hospitals",
       "speciality": "urology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Sterling Hospitals",
       "speciality": "urology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Apollo Hospitals",
       "speciality": "urology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Narayana Multispeciality Hospital",
       "speciality": "urology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Zydus Hospitals",
       "speciality": "urology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Uro Care Hospital",
       "speciality": "urology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Asian Bariatrics and Urology Center",
       "speciality": "urology",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Shalby Hospital",
       "speciality": "urology",
+      "img": "apex-heart.png",
       "location": "Surat"
     },
     {
       "name": "Sanjivani Super Speciality Hospital",
       "speciality": "urology",
+      "img": "apex-heart.png",
       "location": "Surat"
     },
     {
       "name": "Sterling Hospitals",
       "speciality": "surgeons",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "HCG Cancer Centre",
       "speciality": "surgeons",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Apollo Hospitals",
       "speciality": "surgeons",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Narayana Multispeciality Hospital",
       "speciality": "surgeons",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Shalby Hospitals",
       "speciality": "surgeons",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Zydus Hospitals",
       "speciality": "surgeons",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "CIMS Hospital",
       "speciality": "surgeons",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Wockhardt Hospitals",
       "speciality": "surgeons",
+      "img": "apex-heart.png",
       "location": "Ahmedabad"
     },
     {
       "name": "Siddhi Vinayak Hospital",
       "speciality": "surgeons",
+      "img": "apex-heart.png",
       "location": "Surat"
     },
     {
       "name": "Shalby Hospital",
       "speciality": "surgeons",
+      "img": "apex-heart.png",
       "location": "Surat"
     }
   ],
@@ -721,168 +811,200 @@
   ],
   "user": [
     {
-      "email1": "mayur@gmail.com",
-      "password1": "mayur123",
+      "name": "AppointUs",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur",
       "id": 1
     },
-    {
-      "name1": "ayush",
-      "email1": "ayush@gmail.com",
-      "password1": "ayush123",
-      "id": 2
-    },
-    {
-      "name": "mayur",
-      "email": "mayur@123",
-      "password": "123",
-      "id": 3
-    },
-    [],
-    {
-      "email": "mayurpati7456@gmail.com",
-      "password": "qdqdqdq",
-      "id": 5
-    },
-    {
-      "email": "mayurpati7456@gmail.com",
-      "password": "Mayur@123",
-      "id": 6
-    },
-    []
-  ],
-  "appoinment": [
     {
       "name": "AppointUs",
-      "phone": "696969",
-      "date": "2023-04-22T16:14",
-      "text": "hospitals",
-      "text1": "doctor",
-      "id": 1
-    },
-    {
-      "name": "wdqd",
-      "phone": "9106306225",
-      "date": "2023-04-10T17:33",
-      "text": "hospitals",
-      "text1": "doctor",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur",
       "id": 2
     },
     {
-      "name": "dwdwdw",
-      "phone": "dwd",
-      "date": "2023-04-11T00:23",
+      "name": "AppointUs",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur",
       "id": 3
     },
     {
-      "name": "sx",
-      "phone": "s",
-      "date": "2023-04-01T00:23",
+      "name": "AppointUs",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur",
       "id": 4
     },
     {
-      "name": "aaksh",
-      "phone": "55555aq",
+      "name": "AppointUs",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur",
       "id": 5
     },
     {
-      "name": "asd34",
-      "phone": "3234",
-      "date": "2023-04-22T14:49",
-      "": "Neurology",
-      "text": "Dr. Anita Bisht",
+      "name": "AppointUs",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur",
       "id": 6
     },
     {
-      "name": ",aka",
-      "phone": "adsada",
-      "date": "2023-04-11T15:03",
-      "speciality": "Neurology",
-      "Doctor": "Dr. Tejas D. Shah",
+      "name": "AppointUs",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur",
       "id": 7
     },
     {
-      "name": "sunny",
-      "phone": "89898989",
-      "date": "2023-03-29T15:33",
-      "Doctor": "Dr. Tejas D. Shah",
+      "name": "AppointUs",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur",
       "id": 8
     },
     {
-      "name": "dwdqwdwd",
-      "phone": "dwdwd",
-      "date": "2023-03-02T15:35",
+      "name": "AppointUs",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur",
       "id": 9
     },
     {
-      "name": "fef",
-      "phone": "fefe",
-      "date": "2023-04-11T15:42",
-      "speciality": "cardiology",
-      "Doctor": "Dr. Hetal Patolia",
+      "name": "AppointUs",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur",
       "id": 10
     },
     {
-      "name": "visjhal",
-      "phone": "99999",
-      "date": "2023-04-20T15:43",
-      "speciality": "urology",
-      "Doctor": "Dr. Bhumir Chauhan",
+      "name": "AppointUs",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur",
       "id": 11
     },
     {
-      "name": "radhe ",
-      "phone": "2222",
-      "date": "2023-03-31T15:47",
-      "Doctor": "Dr. Hetal Patolia",
+      "name": "AppointUs",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur",
       "id": 12
     },
     {
-      "name": "kalu",
-      "phone": "777",
-      "date": "2023-04-11T15:46",
-      "specialist": "urology",
-      "Doctor": "Dr. Amol Agarwal",
+      "name": "AppointUs",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur",
       "id": 13
     },
     {
-      "name": "erty",
-      "phone": "8769542",
-      "date": "2023-04-17T18:03",
-      "specialist": "cardiology",
-      "Doctor": "Dr. Malhar Patel",
+      "name": "AppointUs",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur",
       "id": 14
     },
     {
-      "specialist": "Oncologist",
-      "name": "ram",
-      "phone": "5555",
-      "date": "2023-04-18",
-      "speciality": "Ophthalmology",
+      "name": "AppointUs",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur",
       "id": 15
     },
     {
-      "specialist": "Oncologist",
-      "name": "joshi",
-      "phone": "98981",
-      "date": "2023-04-05",
-      "speciality": "Oncology",
+      "name": "AppointUs",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur",
       "id": 16
     },
     {
-      "name": "sqdqd",
-      "email": "hallo@maucher-online.com",
-      "password": "dwdwdwd",
+      "name": "AppointUs",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur",
       "id": 17
     },
     {
-      "name": "qdqdqd",
-      "email": "jaypanchal0061@gmail.com",
-      "password": "dsqdqdqdqdq",
+      "name": "AppointUs",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur",
       "id": 18
     },
     {
-      "specialist": "Oncologist",
+      "name": "AppointUs",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur@1234",
       "id": 19
+    },
+    {
+      "name": "moxvahx",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur@123",
+      "id": 20
+    },
+    {
+      "name": "moxvahx",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayue@1234",
+      "id": 21
+    },
+    {
+      "name": "moxvahx",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur@123#",
+      "id": 22
+    },
+    {
+      "password": "Mayur@1234",
+      "id": 23
+    },
+    {
+      "id": 24
+    },
+    {
+      "name": "harsh",
+      "email": "harsh@gmail.com",
+      "password": "Harsh@1234",
+      "id": 25
+    },
+    {
+      "name": "joy",
+      "email": "joy@gmail.com",
+      "password": "Joy@1234",
+      "id": 26
+    },
+    {
+      "name": "moxvahx",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Joy",
+      "id": 27
+    },
+    {
+      "name": "qdqd",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Magh@1234",
+      "id": 28
+    },
+    {
+      "name": "Mayur",
+      "email": "mayurpati7456@gmail.com",
+      "password": "Mayur123@",
+      "id": 29
+    }
+  ],
+  "appointment": [
+    {
+      "specialist": "Oncologist",
+      "name": "ramesh",
+      "phone": "9999888877",
+      "date": "2023-04-29",
+      "speciality": "urology",
+      "Doctor": "Dr. Manish Dhawan",
+      "id": 1
+    },
+    {
+      "name": "jadeja",
+      "phone": "5555555555",
+      "date": "2023-05-24",
+      "speciality": "Neurology",
+      "Doctor": "Dr. Mahendra Singh Chouhan",
+      "id": 2
+    },
+    {
+      "name": "kapil",
+      "phone": "5656565656",
+      "date": "2023-04-22",
+      "speciality": "Ophthalmology",
+      "Doctor": "Dr. Ruchi Mehta",
+      "id": 3
     }
   ]
 }

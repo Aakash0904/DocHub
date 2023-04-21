@@ -1,0 +1,17 @@
+.signup_form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.signup_form label {
+    font-weight: bold;
+}
+
+.signup_form button[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+}

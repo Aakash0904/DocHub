@@ -24,6 +24,15 @@ header {
     z-index: 1;
 }
 
+/* .foot-container {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;
+} */
 
 .nav-link:hover {
     display: block;
@@ -113,7 +122,7 @@ header {
         font-size: 13px;
         margin-bottom: 90%;
     }
-
+    
     /* @media only screen and (max-width: 400px) {
 
   /* For mobile phones: */

@@ -40,8 +40,8 @@ const Header = () => {
               <Link className="nav-link" to="/blog">
                 Blog
               </Link>
-              <Link className="nav-link" to="/signup">
-                Signup
+              <Link className="nav-link" to="/login">
+                login
               </Link>
               {/* {console.log("login", isAuthenticated)}
               {console.log("Data", user)}

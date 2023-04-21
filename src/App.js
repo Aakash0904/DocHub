@@ -16,6 +16,7 @@ import About from "./pages/about/About";
 import Blog from "./pages/blog/Blog";
 import Signup from "./pages/privacy/signup";
 import Login from "./pages/privacy/login";
+import Admin from "./pages/admin page/admin";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
           <Route path="conList" element={<ConList />} />
           <Route path="signup" element={<Signup />} />
           <Route path="login" element={<Login />} />
+          <Route path="admin" element={<Admin />} />
         </Routes>
 
         <Footer />

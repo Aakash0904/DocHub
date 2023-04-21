@@ -7,6 +7,9 @@ const ConList = () => {
   const [hospitalData, setHospitalData] = useState([]);
   const [docData, setDocData] = useState([]);
 
+  const IMG = (imageName) => {
+    return require(`../../assets/hospital_img/${imageName}`);
+  };
   const getHospitalData = () => {
     axios.get("http://localhost:3004/hospitals").then((result) => {
       const hospitalArr = result.data.filter(
@@ -107,7 +110,7 @@ const ConList = () => {
                 <div className="col">
                   <div className="card h-100">
                     <img
-                      src="/Images/zydus.jpg"
+                      src={IMG(item.img)}
                       className="card-img-top"
                       alt="zydus"
                     />

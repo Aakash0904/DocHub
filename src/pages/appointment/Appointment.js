@@ -5,7 +5,7 @@ import DoctorsList from "../../components/common/DoctorsList";
 
 import appoint_bg_doc from "../../assets/Images/appoint_bg_doc.png";
 const Appointment = () => {
-  const [val, setVal] = useState({ specialist: "Oncologist" });
+  const [val, setVal] = useState([]);
 
   const handleChange = (e) => {
     setVal({ ...val, [e.target.name]: e.target.value });
@@ -13,7 +13,7 @@ const Appointment = () => {
   };
 
   const handleSubmit = () => {
-    axios.post("http://localhost:3004/appoinment", val).then((result) => {
+    axios.post("http://localhost:3004/appointment", val).then((result) => {
       console.log("result ", result);
       // setVal(result.data);
     });
@@ -39,6 +39,7 @@ const Appointment = () => {
                   name="name"
                   placeholder="Enter patient's name"
                   onChange={(e) => handleChange(e)}
+                  required
                 />
 
                 <input
@@ -54,13 +55,17 @@ const Appointment = () => {
                   type="date"
                   onChange={(e) => handleChange(e)}
                   id="date"
+                  min={new Date().toISOString().split("T")[0]}
                   name="date"
                   required
                 />
 
                 <SpecialityList handleChange={handleChange} />
                 {console.log("console_val_change", val)}
-                <DoctorsList handleChange={handleChange} speciality={val} />
+                <DoctorsList
+                  handleChange={handleChange}
+                  speciality={val.speciality}
+                />
 
                 <></>
 
