@@ -103,11 +103,12 @@ const ConList = () => {
       </section>
 
       <section className="container-fluid">
-        <div className="row row-cols-1 row-cols-md-5 g-4 mt-3">
+        {/* <div className="row row-cols-1 row-cols-md-5 g-4 mt-3"> */}
+        <div className="row">
           {hospitalData?.map((item, index) => {
             return (
               <>
-                <div className="col">
+                {/* <div className="col">
                   <div className="card h-100">
                     <img
                       src={IMG(item.img)}
@@ -127,6 +128,50 @@ const ConList = () => {
                       >
                         Show Details
                       </button>
+                    </div>
+                  </div>
+                </div> */}
+                <div className="col-3 mb-3 ">
+                  <div className="card-deck ">
+                    <div className="card card_list ">
+                      <div className="view overlay">
+                        <img
+                          className="card-img-top "
+                          src={IMG(item.img)}
+                          alt="Card image cap"
+                          height={"265px"}
+                          width={"auto"}
+                        />
+                        <a href="#!">
+                          <div className="mask rgba-white-slight"></div>
+                        </a>
+                      </div>
+
+                      <div className="card-body">
+                        <h5 className="card-title">{item.name}</h5>
+                      </div>
+                      {/* <p className="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p> */}
+                      {/* <button
+                          type="submit"
+                          className="btn btn-primary mt-1 mb-1 btn1"
+                          data-bs-toggle="modal"
+                          data-bs-target={`#hospital-${index}`}
+                        >
+                          Show more
+                        </button> */}
+                      <div className="card-footer">
+                        <a
+                          className="btn btn-outline-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target={`#hospital-${index}`}
+                          data-mdb-ripple-color="dark"
+                        >
+                          Read more
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -150,7 +195,7 @@ const ConList = () => {
                       <div className="modal-body">...</div>
                       <div className="modal-footer">
                         <button type="button" className="btn btn-primary">
-                          Enquire Now
+                          c Enquire Now
                         </button>
                         <button type="button" className="btn btn-primary">
                           Book Appointment
@@ -169,7 +214,7 @@ const ConList = () => {
             return (
               <>
                 <div className="col">
-                  <div className="card h-100">
+                  <div className="card card_list h-100">
                     <img
                       src="/Images/zydus.jpg"
                       className="card-img-top"

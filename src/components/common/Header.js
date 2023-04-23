@@ -1,14 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import "./header.css";
 import logo from "../../assets/Images/main_logo.png";
 import { Link } from "react-router-dom";
 // import { useAuth0 } from "@auth0/auth0-react";
 
 const Header = () => {
+  const [navbarBg, setNavbarBg] = useState("transparent");
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 30) {
+        setNavbarBg("#ffffff"); // Change the background color to opaque when scrolled
+      } else {
+        setNavbarBg("transparent"); // Set background color to transparent when at the top of the page
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   // const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
   return (
     <>
       <header>
-        <nav className="navbar navbar-expand-lg h-5 ">
+        <nav bg={navbarBg} className="navbar navbar-expand-lg h-5 ">
           <Link className="navbar-brand" to="#">
             <img src={logo} className="logo" width="115" height="auto" alt="" />
           </Link>
@@ -43,30 +61,6 @@ const Header = () => {
               <Link className="nav-link" to="/login">
                 login
               </Link>
-              {/* {console.log("login", isAuthenticated)}
-              {console.log("Data", user)}
-              {isAuthenticated ? (
-                <Link
-                  onClick={() =>
-                    logout({
-                      logoutParams: { returnTo: window.location.origin },
-                    })
-                  }
-                >
-                  Logout
-                </Link>
-              ) : (
-                <Link onClick={() => loginWithRedirect()}>Login</Link>
-              )} */}
-              {/* <Link
-                onClick={() =>
-                  logout({
-                    logoutParams: { returnTo: window.location.origin },
-                  })
-                }
-              >
-                Logout
-              </Link> */}
             </div>
           </div>
         </nav>

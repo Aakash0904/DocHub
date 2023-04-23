@@ -11,6 +11,7 @@ import "./pages/appointment/appointment.css";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import Appointment from "./pages/appointment/Appointment";
+import ListForm from "./pages/list/listform";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Blog from "./pages/blog/Blog";
@@ -50,6 +51,7 @@ function App() {
           <Route path="signup" element={<Signup />} />
           <Route path="login" element={<Login />} />
           <Route path="admin" element={<Admin />} />
+          <Route path="listform" element={<ListForm />} />
         </Routes>
 
         <Footer />

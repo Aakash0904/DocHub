@@ -10,6 +10,10 @@
     color: var(--primary-color);
 }
 
+.card {
+    /* height: 430px; */
+    width: auto;
+}
 
 
 
@@ -20,13 +24,12 @@
     border: 1px solid var(--primary-color);
 }
 
-
-.card:hover {
+/* .card:hover {
     padding: 3px;
     transform: scale(1.05);
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
-}
+} */
 
 .btn1:hover {
     width: 100%;
