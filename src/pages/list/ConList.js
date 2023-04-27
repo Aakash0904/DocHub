@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const ConList = () => {
+  const navigate = useNavigate();
   const location = useLocation();
   const [hospitalData, setHospitalData] = useState([]);
   const [docData, setDocData] = useState([]);
+  const [listData, setlistData] = useState([]);
+  console.log("console_check_dataaa_00", location);
 
   const IMG = (imageName) => {
     return require(`../../assets/hospital_img/${imageName}`);
@@ -32,10 +35,21 @@ const ConList = () => {
     });
   };
 
+  const handleBook = (data) => {
+    console.log("console_check_dataaa", data);
+    navigate("/listform", {
+      state: {
+        loc: data?.location,
+        speciality: data?.speciality,
+        name: data?.name,
+      },
+    });
+  };
+
   useEffect(() => {
     getHospitalData();
     getDoctorData();
-  }, []);
+  }, [location]);
 
   console.log("console_data", location);
   return (
@@ -43,7 +57,10 @@ const ConList = () => {
       <section className="border-bottom mt-1">
         <div className="row container-fluid mt-2 mb-1">
           <div className="col-8 banner mx-auto">
-            <h2 className="mt-1">Best doctors in Gujarat - Updated 2023</h2>
+            <h2 className="mt-1">
+              {hospitalData[0]?.location}'s top specialist & hospitals of&nbsp;
+              {hospitalData[0]?.speciality}
+            </h2>
             <p className="mt-2">
               Doctors are medical professionals who are trained to diagnose and
               treat illnesses and injuries in patients. They are also
@@ -105,42 +122,20 @@ const ConList = () => {
       <section className="container-fluid">
         {/* <div className="row row-cols-1 row-cols-md-5 g-4 mt-3"> */}
         <div className="row">
+          <h1>hospitals in {hospitalData[0]?.location}</h1>
           {hospitalData?.map((item, index) => {
             return (
               <>
-                {/* <div className="col">
-                  <div className="card h-100">
-                    <img
-                      src={IMG(item.img)}
-                      className="card-img-top"
-                      alt="zydus"
-                    />
-                    <div className="card-body">
-                      <h5 className="card-title">{item.name}</h5>
-                      <p className="card-text">{item.location}</p>
-                    </div>
-                    <div className="card-footer">
-                      <button
-                        type="submit"
-                        className="btn btn-primary mt-1 mb-1 btn1"
-                        data-bs-toggle="modal"
-                        data-bs-target={`#hospital-${index}`}
-                      >
-                        Show Details
-                      </button>
-                    </div>
-                  </div>
-                </div> */}
                 <div className="col-3 mb-3 ">
                   <div className="card-deck ">
                     <div className="card card_list ">
                       <div className="view overlay">
                         <img
-                          className="card-img-top "
+                          className="card-img-top  "
                           src={IMG(item.img)}
                           alt="Card image cap"
-                          height={"265px"}
-                          width={"auto"}
+                          height={"250px"}
+                          width={"350px"}
                         />
                         <a href="#!">
                           <div className="mask rgba-white-slight"></div>
@@ -149,6 +144,10 @@ const ConList = () => {
 
                       <div className="card-body">
                         <h5 className="card-title">{item.name}</h5>
+                        <a href={item.url}>
+                          <i class="fa fa-map-marker" aria-hidden="true"></i>
+                          &nbsp; view in map
+                        </a>
                       </div>
                       {/* <p className="card-text">
                         Some quick example text to build on the card title and
@@ -197,7 +196,12 @@ const ConList = () => {
                         <button type="button" className="btn btn-primary">
                           c Enquire Now
                         </button>
-                        <button type="button" className="btn btn-primary">
+                        <button
+                          type="button"
+                          className="btn btn-primary"
+                          data-bs-dismiss="modal"
+                          onClick={() => handleBook(item)}
+                        >
                           Book Appointment
                         </button>
                       </div>
@@ -209,6 +213,7 @@ const ConList = () => {
           })}
         </div>
 
+        <h1>doctors in {hospitalData[0]?.location} </h1>
         <div className="row row-cols-1 row-cols-md-5 g-4 mt-3">
           {docData?.map((item, index) => {
             return (
@@ -251,7 +256,7 @@ const ConList = () => {
                           type="button"
                           className="btn-close"
                           data-bs-dismiss="modal"
-                          aria-label="Close"
+                          // aria-label="Close"
                         ></button>
                       </div>
                       <div className="modal-body">...</div>
@@ -259,8 +264,12 @@ const ConList = () => {
                         <button type="button" className="btn btn-primary">
                           Enquire Now
                         </button>
-                        <button type="button" className="btn btn-primary">
-                          Book Appointment
+                        <button
+                          type="button"
+                          className="btn btn-primary"
+                          data-bs-dismiss="modal"
+                        >
+                          <Link to={"/listform"}>Book Appointment</Link>
                         </button>
                       </div>
                     </div>

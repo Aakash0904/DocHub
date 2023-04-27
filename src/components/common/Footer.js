@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
 
         <div className="text-white text-center p-3 copyright ">
-          © 2020 Copyright:
+          © 2023 Copyright:
           <a className="text-white" href="https://mdbootstrap.com/">
             DocHub
           </a>

@@ -15,6 +15,7 @@ const DoctorsList = ({ handleChange, speciality }) => {
       const doctorsArr =
         filterredList &&
         filterredList.map((item, index) => {
+          console.log("names", item.name);
           return item.name;
         });
       // const doctorsArr = result.data.map((item, index) => {

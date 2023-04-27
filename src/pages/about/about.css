@@ -275,7 +275,7 @@ h2 {
     color: var(--primary-color);
     /* font-weight: 550; */
     font-family: "Poppins", sans-serif;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     line-height: 1.4;
 }
 

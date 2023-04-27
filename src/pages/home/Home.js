@@ -18,7 +18,7 @@ import doc from "../../assets/Images/img-bg.png";
 import doc_bg from "../../assets/Images/img-01-bg.jpg";
 // import LocationList from "../../components/common/LocationList";
 
-const Home = (props) => {
+const Home = () => {
   const navigate = useNavigate();
   const [searchData, setSearchData] = useState({
     location: "Ahmedabad",
@@ -41,7 +41,7 @@ const Home = (props) => {
   };
   return (
     <body>
-      {console.log(props?.data)}
+      {/* {console.log(props?.data)} */}
       <section className="i">
         <div className="onimg">
           <img src={banner} className="img-fluid" />
@@ -52,12 +52,12 @@ const Home = (props) => {
         </div>
       </section>
       <div className="no-gutters d-flex justify-content-center search">
-        <div className="loc">
-          <div className="name">
-            <SpecialityList handleChange={handleChange} />
-          </div>
+        <div className="name">
+          <SpecialityList handleChange={handleChange} />
         </div>
-        <LocationList handleChange={handleChange} />
+        <div className="loc">
+          <LocationList handleChange={handleChange} />
+        </div>
         <div className="srch">
           <a role="button" onClick={handleSearch}>
             {/* <button role="button" onClick={handleSearch}>

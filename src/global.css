@@ -4,6 +4,10 @@
     --background-color: rgb(236, 236, 236);
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .navbar img {
     margin-left: 15px;
 }
@@ -23,6 +27,7 @@ header {
     top: 0;
     z-index: 1;
 }
+
 
 /* .foot-container {
     min-height: 80vh;

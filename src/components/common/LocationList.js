@@ -20,7 +20,7 @@ const LocationList = (props) => {
   }, []);
 
   return (
-    <div className="name">
+    <div className="">
       <select
         className="form-control text-area"
         name="location"

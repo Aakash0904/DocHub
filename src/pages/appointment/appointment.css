@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.app_location {
+    width: 200px !important;
+
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;

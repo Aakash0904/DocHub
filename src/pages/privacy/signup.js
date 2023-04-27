@@ -54,7 +54,7 @@ const SignupForm = () => {
     axios.post("http://localhost:3004/user", data).then((result) => {
       console.log("login details", result);
       // setData(result.data);
-      if (result?.status === 201) setData(null);
+      // if (result?.status === 201) setData(null);
       navigate("/login");
     });
   };
@@ -69,7 +69,7 @@ const SignupForm = () => {
           value={data ? data?.name : ""}
           onChange={(event) => {
             handleChange(event);
-            setName(event);
+            setName(event.target.value);
           }}
           required
           placeholder="enter your name"
