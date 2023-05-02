@@ -238,9 +238,9 @@ ul {
 }
 
 .about-img-two img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /* display: block; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
     width: 100%;
     float: left;
 }
@@ -270,12 +270,11 @@ h2 {
 
 .about-content-two p {
     font-size: 16px;
-    margin-bottom: 15px;
     line-height: 1.8;
     hyphens: auto;
     color: var(--font-color);
     font-weight: 400;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
 }
 
 .statics {
