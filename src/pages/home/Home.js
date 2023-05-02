@@ -51,22 +51,38 @@ const Home = () => {
           </h1>
         </div>
       </section>
-      <div className="no-gutters d-flex justify-content-center search">
-        <div className="name">
+      <div className="no-gutters justify-content-center search container">
+        <div className="row   ">
+          <div className="col-lg-6 home_speciality ">
+            <SpecialityList handleChange={handleChange} />
+          </div>
+          <div className="col-lg-6" onChange={handleSearch}>
+            <LocationList handleChange={handleChange} />
+          </div>
+          {/* <div className="col-2 ">
+          <button>search</button>
+        </div> */}
+          {/* <div className="col-lg-2">
+            <div className="srch">
+              <a role="button" onClick={handleSearch}>
+                <i className="fa fa-search"></i>
+              </a>
+            </div>{" "}
+          </div> */}
+        </div>
+      </div>
+      {/* <div className="name">
           <SpecialityList handleChange={handleChange} />
         </div>
         <div className="loc">
           <LocationList handleChange={handleChange} />
-        </div>
-        <div className="srch">
+        </div> */}
+      {/* <div className="srch">
           <a role="button" onClick={handleSearch}>
-            {/* <button role="button" onClick={handleSearch}>
-            <i className="fa fa-search"></i>  
-          </button> */}
             <i className="fa fa-search"></i>
           </a>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
       <section className="container third">
         <div className="row">
           <div className="col-12 col-sm-12 col-md-12 col-lg-6 align-self-center one_click">
@@ -83,7 +99,7 @@ const Home = () => {
               aliquip commodo consequat duis aute irure dolor in reprehenderit.
             </p>
             <div className="click_abt align-items-center">
-              <a href="#">About us</a>
+              <a href="./about">About us</a>
             </div>
           </div>
 

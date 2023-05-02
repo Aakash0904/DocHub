@@ -13,6 +13,9 @@ const ConList = () => {
   const IMG = (imageName) => {
     return require(`../../assets/hospital_img/${imageName}`);
   };
+  const DIMG = (imageName) => {
+    return require(`../../assets/doc_img/${imageName}`);
+  };
   const getHospitalData = () => {
     axios.get("http://localhost:3004/hospitals").then((result) => {
       const hospitalArr = result.data.filter(
@@ -107,7 +110,7 @@ const ConList = () => {
                 </label>
                 <input
                   className="form-control"
-                  type="number"
+                  type="tel"
                   placeholder="Mobile Number"
                 />
               </div>
@@ -122,7 +125,9 @@ const ConList = () => {
       <section className="container-fluid">
         {/* <div className="row row-cols-1 row-cols-md-5 g-4 mt-3"> */}
         <div className="row">
-          <h1>hospitals in {hospitalData[0]?.location}</h1>
+          <h1 className="list_hadding mb-5 mt-5">
+            Hospitals in {hospitalData[0]?.location}
+          </h1>
           {hospitalData?.map((item, index) => {
             return (
               <>
@@ -149,27 +154,24 @@ const ConList = () => {
                           &nbsp; view in map
                         </a>
                       </div>
-                      {/* <p className="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
-                      {/* <button
-                          type="submit"
-                          className="btn btn-primary mt-1 mb-1 btn1"
-                          data-bs-toggle="modal"
-                          data-bs-target={`#hospital-${index}`}
-                        >
-                          Show more
-                        </button> */}
+
                       <div className="card-footer">
-                        <a
-                          className="btn btn-outline-primary"
+                        {/* <a
+                          className="btn card_read_btn"
                           data-bs-toggle="modal"
                           data-bs-target={`#hospital-${index}`}
                           data-mdb-ripple-color="dark"
                         >
-                          Read more
-                        </a>
+                          Show details
+                        </a> */}
+                        <button
+                          type="submit"
+                          className="btn  mt-1 mb-1  card_read_btn"
+                          data-bs-toggle="modal"
+                          data-bs-target={`#hospital-${index}`}
+                        >
+                          Show Details
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -191,19 +193,26 @@ const ConList = () => {
                           aria-label="Close"
                         ></button>
                       </div>
-                      <div className="modal-body">...</div>
+                      <div className="modal-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At cupiditate numquam accusamus impedit soluta
+                        praesentium magnam veniam, unde explicabo ipsa sit nisi
+                        dolore labore eveniet ex, nobis ullam id illum.
+                      </div>
                       <div className="modal-footer">
-                        <button type="button" className="btn btn-primary">
+                        {/* <button type="button" className="btn btn-primary">
                           c Enquire Now
-                        </button>
-                        <button
-                          type="button"
-                          className="btn btn-primary"
-                          data-bs-dismiss="modal"
-                          onClick={() => handleBook(item)}
-                        >
-                          Book Appointment
-                        </button>
+                        </button> */}
+                        <div className="list_btn text-center">
+                          <button
+                            type="button"
+                            className="btn modal_btn "
+                            data-bs-dismiss="modal"
+                            onClick={() => handleBook(item)}
+                          >
+                            Book Appointment
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -213,16 +222,18 @@ const ConList = () => {
           })}
         </div>
 
-        <h1>doctors in {hospitalData[0]?.location} </h1>
-        <div className="row row-cols-1 row-cols-md-5 g-4 mt-3">
+        <h1 className="list_hadding mb-5 mt-5">
+          Doctors in {hospitalData[0]?.location}{" "}
+        </h1>
+        <div className="row row-cols-1 row-cols-md-5 g-4 mt-3 ">
           {docData?.map((item, index) => {
             return (
               <>
                 <div className="col">
-                  <div className="card card_list h-100">
+                  <div className="card doc_img_card">
                     <img
-                      src="/Images/zydus.jpg"
-                      className="card-img-top"
+                      src={DIMG(item.img)}
+                      className="card-img-top "
                       alt="zydus"
                     />
                     <div className="card-body">
@@ -232,7 +243,7 @@ const ConList = () => {
                     <div className="card-footer">
                       <button
                         type="submit"
-                        className="btn btn-primary mt-1 mb-1 btn1"
+                        className="btn card_read_btn "
                         data-bs-toggle="modal"
                         data-bs-target={`#doctor-${index}`}
                       >
@@ -259,11 +270,8 @@ const ConList = () => {
                           // aria-label="Close"
                         ></button>
                       </div>
-                      <div className="modal-body">...</div>
+                      <div className="modal-body">{item.description}</div>
                       <div className="modal-footer">
-                        <button type="button" className="btn btn-primary">
-                          Enquire Now
-                        </button>
                         <button
                           type="button"
                           className="btn btn-primary"

@@ -18,6 +18,7 @@ import Blog from "./pages/blog/Blog";
 import Signup from "./pages/privacy/signup";
 import Login from "./pages/privacy/login";
 import Admin from "./pages/admin page/admin";
+import Appoint from "./components/appointment/appoint";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="admin" element={<Admin />} />
           <Route path="listform" element={<ListForm />} />
+          <Route path="appoint" element={<Appoint />} />
         </Routes>
 
         <Footer />

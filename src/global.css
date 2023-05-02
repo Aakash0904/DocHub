@@ -19,6 +19,7 @@ body::-webkit-scrollbar {
     font-size: 18px;
     margin-left: 10px;
     margin-right: 22px;
+    border-radius: 3px;
 }
 
 header {

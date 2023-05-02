@@ -46,8 +46,11 @@ const Blog = () => {
                       {ndata.title.slice(0, 55).toUpperCase()}
                     </h6>
                     <p className="card-text">
-                      {ndata.description?.slice(0, 120)}
+                      {ndata.description?.slice(0, 185)}
+                      <a>...</a>
                     </p>
+                  </div>
+                  <div className="card-footer">
                     <a
                       href={ndata.url}
                       className="btn btn-outline-primary"
