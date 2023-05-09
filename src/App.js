@@ -19,6 +19,7 @@ import Signup from "./pages/privacy/signup";
 import Login from "./pages/privacy/login";
 import Admin from "./pages/admin page/admin";
 import Appoint from "./components/appointment/appoint";
+
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 function App() {

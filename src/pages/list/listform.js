@@ -11,9 +11,11 @@ const ContactForm = () => {
     email: "",
     textarea: "",
   });
+  const [popup, setPopup] = useState([]);
   const [modalData, setModalData] = useState([]);
   const handleChange = (e) => {
     setVal({ ...val, [e.target.name]: e.target.value });
+    setPopup({ ...val, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
@@ -89,6 +91,7 @@ const ContactForm = () => {
             required
           />
           <textarea
+            rows={6}
             type="textarea"
             id="textarea"
             placeholder="Enter your query"
@@ -119,21 +122,15 @@ const ContactForm = () => {
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">
-                    appointment details
+                    Your appointment has been booked !
                   </h5>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
                 </div>
                 <div class="modal-body">
-                  <p>Name:{modalData[modalData.length - 1]?.name} </p>
+                  <p>Name:{popup?.name} </p>
+                  <p>Phone no:{popup?.phone}</p>
+                  <p>Email:{popup?.email}</p>
+                  <p>Date:{popup?.date}</p>
                 </div>
-                ;
                 <div class="modal-footer">
                   <button
                     type="button"
@@ -142,9 +139,6 @@ const ContactForm = () => {
                     data-dismiss="modal"
                   >
                     Close
-                  </button>
-                  <button type="button" class="btn btn-primary">
-                    Save changes
                   </button>
                 </div>
               </div>

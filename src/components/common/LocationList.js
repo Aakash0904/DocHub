@@ -28,7 +28,9 @@ const LocationList = (props) => {
 
         // id="exampleFormControlSelect1"
       >
-        <option>Choose location </option>
+        <option selected={props.isblank ? true : false}>
+          Choose location{" "}
+        </option>
         {data &&
           data?.map((item, index) => {
             return <option>{item}</option>;

@@ -81,6 +81,7 @@ const Admin = () => {
               <th>Email</th>
               <th>Date</th>
               <th>Location</th>
+              <th>Message</th>
               <th>Delete</th>
             </tr>
           </thead>
@@ -95,6 +96,7 @@ const Admin = () => {
                   <td>{cdata.email}</td>
                   <td>{cdata.date}</td>
                   <td>{cdata.location}</td>
+                  <td>{cdata.textarea}</td>
                   <td>
                     <button
                       type="button"

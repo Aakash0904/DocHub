@@ -8,20 +8,14 @@ import appoint_bg_doc from "../../assets/Images/appoint_bg_doc.png";
 import LocationList from "../../components/common/LocationList";
 // import HospitalList from "../../components/common/Hospitals";
 const Appointment = () => {
-  const [val, setVal] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    date: "",
-    location: "",
-    speciality: "",
-  });
+  const [val, setVal] = useState({});
   const [name, setName] = useState([]);
   const [nameError, setNameError] = useState([]);
   const [email, setEmail] = useState([]);
   const [emailError, setEmailError] = useState([]);
   const [phone, setPhone] = useState([]);
   const [phoneError, setPhoneError] = useState([]);
+  const [isblanklocation, setIsblanklocation] = useState(false);
   const validateEmail = (email) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
@@ -53,8 +47,10 @@ const Appointment = () => {
         email: "",
         date: "",
         location: "",
-        speciality: "",
+        list: "",
+        // speciality: "",
       });
+      setIsblanklocation(true);
       if (!validateEmail(email)) {
         setEmailError("Please enter a valid email address");
       }
@@ -99,6 +95,7 @@ const Appointment = () => {
                   id="phone"
                   name="phone"
                   pattern="[0-9]{10}"
+                  maxLength={10}
                   value={val?.phone}
                   placeholder="Enter your phone number"
                   onChange={(e) => {
@@ -126,7 +123,8 @@ const Appointment = () => {
                 <input
                   type="date"
                   onChange={(e) => handleChange(e)}
-                  id="date"
+                  id="dat"
+                  value={val?.date}
                   min={new Date().toISOString().split("T")[0]}
                   name="date"
                   required
@@ -135,12 +133,13 @@ const Appointment = () => {
                 <LocationList
                   handleChange={handleChange}
                   required
+                  name="list"
+                  id="list"
+                  isblank={isblanklocation}
+                  //value={val?.list}
                   className="app_location"
                 />
-                {/* <SpecialityList
-                  handleChange={handleChange}
-                  location={val.location}
-                /> */}
+
                 {console.log("console_val_change", val)}
                 <Hospitals
                   handleChange={handleChange}
