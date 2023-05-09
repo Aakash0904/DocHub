@@ -11,7 +11,7 @@ import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import Appointment from "./pages/appointment/Appointment";
 import Home from "./pages/home/home";
-import About from "./pages/about/about";
+import About from "./pages/about/About";
 import Blog from "./pages/blog/Blog";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
