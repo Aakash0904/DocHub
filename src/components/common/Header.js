@@ -1,8 +1,10 @@
 import React from "react";
 import logo from "../../assets/Images/main_logo.png";
 import { Link } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Header = () => {
+  const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
   return (
     <header>
       <nav className="navbar navbar-expand-lg h-5 ">
@@ -25,7 +27,7 @@ const Header = () => {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav">
-            <Link className="nav-link"  to="/home">
+            <Link className="nav-link" to="/home">
               Home
             </Link>
             <Link className="nav-link" to="/about">
@@ -37,6 +39,18 @@ const Header = () => {
             <Link className="nav-link" to="/blog">
               Blog
             </Link>
+            {isAuthenticated ? (
+              <button
+                onClick={() =>
+                  logout({ logoutParams: { returnTo: window.location.origin } })
+                }
+              >
+                {" "}
+                Log Out
+              </button>
+            ) : (
+              <Link className="nav-link" to="/login">Login as admin</Link>
+            )}
           </div>
         </div>
       </nav>

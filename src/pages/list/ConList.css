@@ -20,7 +20,7 @@
 }
 
 
-.card:hover {
+.card_con:hover {
     padding: 3px;
     transform: scale(1.05);
     border-radius: 10px;
