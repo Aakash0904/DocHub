@@ -37,6 +37,9 @@ const Header = () => {
             <Link className="nav-link" to="/blog">
               Blog
             </Link>
+            <Link className="nav-link" to="/login">
+              Login as admin
+            </Link>
           </div>
         </div>
       </nav>

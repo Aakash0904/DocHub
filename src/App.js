@@ -3,7 +3,6 @@ import axios from "axios";
 import "./global.css";
 import ConList from "./pages/list/ConList";
 import "./pages/list/ConList.css";
-// import "./components/common/footer.css";
 import "./pages/appointment/appointment.css";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
@@ -11,6 +10,7 @@ import Appointment from "./pages/appointment/Appointment";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Blog from "./pages/blog/Blog";
+import Login from "./pages/login/Login";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 function App() {
@@ -44,6 +44,7 @@ function App() {
           <Route path="appointment" element={<Appointment />} />
           <Route path="blog" element={<Blog />} />
           <Route path="conList" element={<ConList />} />
+          <Route path="login" element={<Login />} />
         </Routes>
       
   <Footer/>
