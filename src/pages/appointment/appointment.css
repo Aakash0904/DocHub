@@ -1,4 +1,10 @@
-
+:root {
+    --primary-color: rgba(0, 124, 157, 0.9);
+    --secondaryh-color: #015c5a;
+    --helper-color: rgba(0, 160, 156, 0.9);
+    --background-color: rgb(236, 236, 236);
+    --font-color: #212529;
+}
 
 * {
     margin: 0;
@@ -6,36 +12,23 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow-x: hidden;
-}
+.app_location {
+    width: 200px !important;
 
-.navbar-nav a {
-    color: var(--primary-color);
-    font-weight: 480;
-    font-size: 18px;
-    margin-left: 10px;
-    margin-right: 22px;
-}
-
-
-
-.nav-link:hover {
-    display: block;
-    color: white;
-    background-color: var(--primary-color);
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
-.container {
+.app_con {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 
 }
 
@@ -47,67 +40,91 @@ body {
 
 .image img {
     width: auto;
-    height: auto;
+    height: 500px;
+    margin-top: 105px;
 }
 
-header {
-    background-color: var(--background-color);
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-.form {
+.appoinment_form {
     flex: 1;
     order: 2;
     max-width: 400px;
-    margin: 20px;
+    margin-bottom: 20px;
+    color: #000;
 
 }
 
-.form h2 {
-    margin: 15px;
+.app_con h2 {
+    /* margin: 15px; */
     text-align: center;
     color: var(--primary-color);
 }
 
-form {
+.appoinment_form {
     background-color: var(--primary-color);
     padding: 20px;
     border-radius: 10px;
+    color: #000;
     box-shadow: 0px 0px 0px 3px rgba(1, 1, 1, 0.182);
 }
 
+/* .appoinment_form,
 input[type="text"],
 select,
 input[type="tel"],
-input[type="datetime-local"],
+input[type="email"],
+input[type="date"],
 textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
+
+} */
+
+.appoinment_form input,
+select,
+textarea {
+    width: 360px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
 }
 
-input[type="submit"] {
+.spec {
+    width: 100%;
+    display: block;
+}
+
+.appointment_btn {
     background-color: white;
-    color: #7c7c7c;
+    /* color: #7c7c7c; */
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
 }
 
-input[type="submit"]:hover,
+.appointment_btn:hover {
+    background-color: var(--helper-color);
+    color: white;
+}
+
+option input[type="submit"]:hover,
 footer {
     background-color: #006666;
     color: white;
 }
 
-#date,
-#name {
-    color: #7c7c7c;
+input[type=datetime-local]:invalid::-webkit-datetime-edit {
+    color: #999;
+}
+
+
+
+.chooseopt {
+    color: blue;
 }
 
 @media only screen and (max-width: 768px) {
@@ -117,13 +134,15 @@ footer {
 
     .image img {
         width: 100%;
+        height: auto;
+        margin: 0;
     }
 
     .image {
         margin: 1;
     }
 
-    .form {
+    .appoinment_form {
         margin: 20px auto;
     }
 }

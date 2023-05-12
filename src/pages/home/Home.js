@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import SpecialityList from "../../components/common/SpecialityList";
+import LocationList from "../../components/common/LocationList";
 
 // import Header from "../../components/common/Header";
 // import logo from "../../assets/images/main_logo.png";
@@ -13,10 +16,32 @@ import cir3 from "../../assets/Images/circle-3.png";
 import sec_bg from "../../assets/Images/section-bg.png";
 import doc from "../../assets/Images/img-bg.png";
 import doc_bg from "../../assets/Images/img-01-bg.jpg";
+// import LocationList from "../../components/common/LocationList";
 
 const Home = () => {
+  const navigate = useNavigate();
+  const [searchData, setSearchData] = useState({
+    location: "Ahmedabad",
+    speciality: "Oncology",
+  });
+
+  const handleChange = (e) => {
+    setSearchData((prev) => {
+      return { ...prev, [e.target.name]: e.target.value };
+    });
+  };
+  const handleSearch = () => {
+    console.log("console_check", searchData);
+    navigate("/conList", {
+      state: {
+        loc: searchData?.location,
+        speciality: searchData?.speciality,
+      },
+    });
+  };
   return (
     <body>
+      {/* {console.log(props?.data)} */}
       <section className="i">
         <div className="onimg">
           <img src={banner} className="img-fluid" />
@@ -26,36 +51,38 @@ const Home = () => {
           </h1>
         </div>
       </section>
-      <div className="no-gutters d-flex justify-content-center search">
-        <div className="loc">
-          <select
-            className="form-control text-area"
-            // id="exampleFormControlSelect1"
-          >
-            <option>Location</option>
-            <option>London</option>
-            <option>Boston</option>
-            <option>Mumbai</option>
-            <option>New York</option>
-            <option>Toronto</option>
-            <option>Paris</option>
-          </select>
-        </div>
-        <div className="name">
-          <select
-            className="form-control text-area"
-            // id="exampleFormControlSelect1"
-          >
-            <option>Location</option>
-            <option>London</option>
-            <option>Boston</option>
-            <option>Mumbai</option>
-            <option>New York</option>
-            <option>Toronto</option>
-            <option>Paris</option>
-          </select>
+      <div className="no-gutters justify-content-center search container">
+        <div className="row   ">
+          <div className="col-lg-6 home_speciality ">
+            <SpecialityList handleChange={handleChange} />
+          </div>
+          <div className="col-lg-6" onChange={handleSearch}>
+            <LocationList handleChange={handleChange} />
+          </div>
+          {/* <div className="col-2 ">
+          <button>search</button>
+        </div> */}
+          {/* <div className="col-lg-2">
+            <div className="srch">
+              <a role="button" onClick={handleSearch}>
+                <i className="fa fa-search"></i>
+              </a>
+            </div>{" "}
+          </div> */}
         </div>
       </div>
+      {/* <div className="name">
+          <SpecialityList handleChange={handleChange} />
+        </div>
+        <div className="loc">
+          <LocationList handleChange={handleChange} />
+        </div> */}
+      {/* <div className="srch">
+          <a role="button" onClick={handleSearch}>
+            <i className="fa fa-search"></i>
+          </a>
+        </div> */}
+      {/* </div> */}
       <section className="container third">
         <div className="row">
           <div className="col-12 col-sm-12 col-md-12 col-lg-6 align-self-center one_click">
@@ -72,7 +99,7 @@ const Home = () => {
               aliquip commodo consequat duis aute irure dolor in reprehenderit.
             </p>
             <div className="click_abt align-items-center">
-              <a href="#">About us</a>
+              <a href="./about">About us</a>
             </div>
           </div>
 

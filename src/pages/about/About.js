@@ -20,18 +20,18 @@ const About = () => {
         <div className="container">
           <div className="row align-items-center">
             <div
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              className="col col-lg-6 "
+              // data-aos="fade-up"
+              // data-aos-duration="1200"
+              className="col-lg-6 "
             >
               <div className="about-img-two">
-                <img decoding="async" src={abt_img} alt="Image" />
+                <img src={abt_img} alt="Image" />
               </div>
             </div>
             <div
-              data-aos="fade-up"
-              data-aos-duration="1600"
-              className="col col-lg-6 "
+              // data-aos="fade-up"
+              // data-aos-duration="1600"
+              className=" col-lg-6 "
             >
               <div className="about-content-two">
                 <h2>Tackle The Challenge Of Delivering Health Care</h2>
@@ -70,7 +70,7 @@ const About = () => {
             />
             <div className="card-body">
               <h5 className="card-title">Explore</h5>
-              <p className="card-text">
+              <p className="card-text card_abt_txt">
                 Find and research top hospitals & destinations
                 {/* &nbsp&nbsp&nbsp&nbsp &nbsp &nbsp */}
               </p>
@@ -82,7 +82,7 @@ const About = () => {
             <img className="card-img-top" src={match} alt="Card image cap" />
             <div className="card-body">
               <h5 className="card-title">Match</h5>
-              <p className="card-text">
+              <p className="card-text card_abt_txt">
                 Based on your criteria, we recommend the best hospitals or
                 providers
               </p>
@@ -94,7 +94,7 @@ const About = () => {
             <img className="card-img-top" src={arrange} alt="Card image cap" />
             <div className="card-body">
               <h5 className="card-title">Arrange</h5>
-              <p className="card-text">
+              <p className="card-text card_abt_txt">
                 The provider will contact you directly to coordinate your
                 treatment
               </p>
@@ -106,7 +106,7 @@ const About = () => {
             <img className="card-img-top" src={treat} alt="Card image cap" />
             <div className="card-body">
               <h5 className="card-title">Treat</h5>
-              <p className="card-text">
+              <p className="card-text card_abt_txt">
                 Finalize your treatment with the hospital/provider of your
                 choice
               </p>
