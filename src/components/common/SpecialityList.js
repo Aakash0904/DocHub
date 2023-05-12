@@ -1,38 +1,43 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const SpecialityList = (props) => {
-    const [data, setData] =useState([]);
+  const [data, setData] = useState([]);
+  // const [selectedValue, setSelectedValue] = useState("");
+  // const [secondDropdownOptions, setSecondDropdownOptions] = useState([]);
 
-    const getHospitalData=()=>{
-      axios.get('http://localhost:3004/hospitals')
-      .then((result)=>{
-        console.log("here's the data", result);
-       const specilalityArr =  result.data.map((item, index)=>{
-          return item.speciality
-        })
-        console.log("console_data",[...new Set(specilalityArr)]);
-        setData([...new Set(specilalityArr)]);
-      })
-    };
+  const getHospitalData = () => {
+    axios.get("http://localhost:3004/doctors").then((result) => {
+      console.log("here's the data", result);
+      const specilalityArr = result.data.map((item, index) => {
+        return item.speciality;
+      });
+      console.log("console_data123", specilalityArr, [
+        ...new Set(specilalityArr),
+      ]);
+      setData([...new Set(specilalityArr)]);
+    });
+  };
 
-    useEffect( ()=>{
-      getHospitalData();
-    }, []);
+  useEffect(() => {
+    getHospitalData();
+  }, []);
 
   return (
-        <div className="name">
-          <select
-            className="form-control text-area"
-            // id="exampleFormControlSelect1"
-          >
-            {data && data?.map((item, index)=>{
-              return(
-              <option>{item}</option>
-              )
-            })}
-          </select>
-          </div>
+    <select
+      className="form-control text-area"
+      onChange={(e) => props.handleChange(e)}
+      selectedValue
+      name="speciality"
+      required
+      // id="exampleFormControlSelect1"
+    >
+      <option>Choose specialization </option>;
+      {data &&
+        data?.map((item, index) => {
+          return <option>{item}</option>;
+        })}
+    </select>
   );
 };
 export default SpecialityList;

@@ -71,7 +71,7 @@ const About = () => {
             />
             <div className="card-body">
               <h5 className="card-title">Explore</h5>
-              <p className="card-text">
+              <p className="card-text card_abt_txt">
                 Find and research top hospitals & destinations
                 {/* &nbsp&nbsp&nbsp&nbsp &nbsp &nbsp */}
               </p>
@@ -83,7 +83,7 @@ const About = () => {
             <img className="card-img-top" src={match} alt="Card image cap" />
             <div className="card-body">
               <h5 className="card-title">Match</h5>
-              <p className="card-text">
+              <p className="card-text card_abt_txt">
                 Based on your criteria, we recommend the best hospitals or
                 providers
               </p>
@@ -95,7 +95,7 @@ const About = () => {
             <img className="card-img-top" src={arrange} alt="Card image cap" />
             <div className="card-body">
               <h5 className="card-title">Arrange</h5>
-              <p className="card-text">
+              <p className="card-text card_abt_txt">
                 The provider will contact you directly to coordinate your
                 treatment
               </p>
@@ -107,7 +107,7 @@ const About = () => {
             <img className="card-img-top" src={treat} alt="Card image cap" />
             <div className="card-body">
               <h5 className="card-title">Treat</h5>
-              <p className="card-text">
+              <p className="card-text card_abt_txt">
                 Finalize your treatment with the hospital/provider of your
                 choice
               </p>

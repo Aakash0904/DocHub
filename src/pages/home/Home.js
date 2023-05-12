@@ -3,17 +3,22 @@ import { useNavigate } from "react-router-dom";
 import SpecialityList from "../../components/common/SpecialityList";
 import LocationList from "../../components/common/LocationList";
 
+// import Header from "../../components/common/Header";
+// import logo from "../../assets/images/main_logo.png";
 import banner from "../../assets/Images/banner.png";
 
 import cir1 from "../../assets/Images/circle-1.png";
+// import arrow1 from "../../assets/images/arro.svg";
+// import arrow2 from "../../assets/images/line-02.png";
 import cir2 from "../../assets/Images/circle-2.png";
 import cir3 from "../../assets/Images/circle-3.png";
 
 import sec_bg from "../../assets/Images/section-bg.png";
 import doc from "../../assets/Images/img-bg.png";
 import doc_bg from "../../assets/Images/img-01-bg.jpg";
+// import LocationList from "../../components/common/LocationList";
 
-const Home = (props) => {
+const Home = () => {
   const navigate = useNavigate();
   const [searchData, setSearchData] = useState({
     location: "Ahmedabad",
@@ -36,7 +41,7 @@ const Home = (props) => {
   };
   return (
     <body>
-      {console.log(props?.data)}
+      {/* {console.log(props?.data)} */}
       <section className="i">
         <div className="onimg">
           <img src={banner} className="img-fluid" />
@@ -46,19 +51,38 @@ const Home = (props) => {
           </h1>
         </div>
       </section>
-      <div className="no-gutters d-flex justify-content-center search">
-        <div className="loc">
-          <div className="name">
+      <div className="no-gutters justify-content-center search container">
+        <div className="row   ">
+          <div className="col-lg-6 home_speciality ">
             <SpecialityList handleChange={handleChange} />
           </div>
+          <div className="col-lg-6" onChange={handleSearch}>
+            <LocationList handleChange={handleChange} />
+          </div>
+          {/* <div className="col-2 ">
+          <button>search</button>
+        </div> */}
+          {/* <div className="col-lg-2">
+            <div className="srch">
+              <a role="button" onClick={handleSearch}>
+                <i className="fa fa-search"></i>
+              </a>
+            </div>{" "}
+          </div> */}
         </div>
-        <LocationList handleChange={handleChange} />
-        <div className="srch">
+      </div>
+      {/* <div className="name">
+          <SpecialityList handleChange={handleChange} />
+        </div>
+        <div className="loc">
+          <LocationList handleChange={handleChange} />
+        </div> */}
+      {/* <div className="srch">
           <a role="button" onClick={handleSearch}>
             <i className="fa fa-search"></i>
           </a>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
       <section className="container third">
         <div className="row">
           <div className="col-12 col-sm-12 col-md-12 col-lg-6 align-self-center one_click">
@@ -75,7 +99,7 @@ const Home = (props) => {
               aliquip commodo consequat duis aute irure dolor in reprehenderit.
             </p>
             <div className="click_abt align-items-center">
-              <a href="#">About us</a>
+              <a href="./about">About us</a>
             </div>
           </div>
 
@@ -100,11 +124,13 @@ const Home = (props) => {
         <div className="row step d-flex">
           <div className=" col ">
             <img src={cir1} className="step_img" />
+            {/* <img src={arrow1} className="arrow_1" /> */}
           </div>
           <div className=" col ">
             <img src={cir2} className="step_img" />
           </div>
           <div className="col ">
+            {/* <img src={arrow2} className="arrow_2" /> */}
             <img src={cir3} className="step_img" />
           </div>
         </div>
