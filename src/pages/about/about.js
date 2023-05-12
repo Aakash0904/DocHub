@@ -42,7 +42,7 @@ const About = () => {
             >
               <div className="about-content-two">
                 <p>
-                  Welcome to our appointment booking website! We are dedicated
+                  welcome to our appointment booking website! We are dedicated
                   to making healthcare more accessible and convenient for
                   everyone. Our platform allows patients to easily book
                   appointments with multiple hospitals and healthcare providers,
