@@ -21,32 +21,30 @@ function Login() {
   };
   const navigate = useNavigate();
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setEmailError("");
-    setPasswordError("");
-    if (!validateEmail(email)) {
-      setEmailError("Please enter a valid email address");
-    }
-    if (!validatePassword(password)) {
-      setPasswordError(
-        "Password must contain at least 8 characters, one uppercase letter, one lowercase letter, one number, and one special character"
-      );
-    }
-    // handle form submission here
-    axios.get("http://localhost:3004/user").then((response) => {
-      const users = response.data;
-      const user = users.find(
-        (user) => user.email === email && user.password === password
-      );
-      if (user) {
-        // If the user's input matches, navigate to the home page
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let config = {
+      method: "post",
+      maxBodyLength: Infinity,
+      url: "http://localhost:1337/login",
+      data: {
+        email: email,
+        password: password,
+      },
+    };
+
+    axios
+      .request(config)
+      .then((response) => {
+        console.log("login", response.data);
+        localStorage.setItem("token", response.data.token);
+        alert("success login");
         navigate("/admin");
-      } else {
-        // If the user's input doesn't match, display an error message
-        alert("Invalid email or password.");
-      }
-    });
+      })
+      .catch((error) => {
+        console.log(error);
+        alert(error.message);
+      });
   };
 
   return (

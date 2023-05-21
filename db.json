@@ -365,13 +365,6 @@
       "url": "https://goo.gl/maps/waMZQ8P6LjZxCUhp8"
     },
     {
-      "name": "Iladevi Cataract & IOL Research Centre",
-      "speciality": "Ophthalmology",
-      "img": "Ila-devi-eye-logo.png",
-      "location": "Ahmedabad",
-      "url": "https://goo.gl/maps/LcNLMbUjQsugwZ3k7"
-    },
-    {
       "name": "Raghudeep Eye Hospital",
       "speciality": "Ophthalmology",
       "img": "raghudeep-eye.png",
@@ -779,6 +772,7 @@
     {
       "name": "Dr. Tejas D. Shah",
       "speciality": "Ophthalmology",
+      "img": "doctor.png",
       "location": "Ahmedabad",
       "experience": "29 years",
       "description": "Dr. Tejas D. Shah is a respected Eye Surgeon and Ophthalmologist who currently stays in Ambawadi in Ahmedabad, Gujarat. With 29 years of successful work experience he holds numerous successful eye surgeries in his records. He received the MBBS degree in the Smt. NHL Municipal Medical College, Ahmedabad in 1987 and his Diploma and MS in Ophthalmology from the Smt. NHL Municipal Medical College, Ahmedabad in 1991. In 1992 he joined the Amdavad Eye Laser Hospitals Pvt. Ltd as an Ophthalmologist and is presently its director. He has received the Fellowship in Cataract Management and completed the coursework under Dr. A. R. Vasavada and a Fellowship in Corneal Diseases from L.V. Prasad Eye Institute."
@@ -991,6 +985,44 @@
       "hospitalName": "Apex Heart Institute",
       "location": "Ahmedabad",
       "id": 6
+    },
+    {
+      "name": "patil khushal",
+      "phone": "9428286892",
+      "date": "2525-02-05",
+      "email": "jaypanchal0061@gmail.com",
+      "textarea": "Vishal Joshi Loda Hai",
+      "hospitalName": "Narayana Multispeciality Hospital",
+      "location": "Ahmedabad",
+      "id": 7
+    },
+    {
+      "name": "moka",
+      "phone": "6666666666",
+      "date": "2023-06-01",
+      "email": "mayurpatil7456@gmail.com",
+      "textarea": "sqhvdiq",
+      "hospitalName": "Unicare Hospital",
+      "location": "Surat",
+      "id": 8
+    },
+    {
+      "name": "patil khushal",
+      "phone": "9428286892",
+      "date": "2023-05-27",
+      "email": "mayurpatil7456@gmail.com",
+      "textarea": "dq",
+      "id": 9
+    },
+    {
+      "name": "patil khushal",
+      "phone": "9428286892",
+      "date": "2023-05-23",
+      "email": "mayurpatil7456@gmail.com",
+      "textarea": "cfeeqaq",
+      "hospitalName": "CIMS Hospital",
+      "location": "Ahmedabad",
+      "id": 10
     }
   ],
   "appointment": [
@@ -1038,6 +1070,71 @@
       "location": "Ahmedabad",
       "speciality": "Apex Heart Institute",
       "id": 6
+    },
+    {
+      "name": "Mayur Patil",
+      "phone": "9106306225",
+      "email": "hallo@maucher-online.com",
+      "date": "2023-05-10",
+      "location": "Ahmedabad",
+      "speciality": "Sneh Hospitals and IVF Center",
+      "id": 7
+    },
+    {
+      "name": "Patil Khushal",
+      "phone": "9876543215",
+      "email": "hallo@maucher-online.com",
+      "date": "5225-02-18",
+      "location": "Ahmedabad",
+      "speciality": "Nova IVF Fertility",
+      "id": 8
+    },
+    {
+      "name": "lopa",
+      "phone": "5555555555",
+      "email": "mayurpati7456@gmail.com",
+      "date": "5555-05-04",
+      "location": "Surat",
+      "list": "",
+      "speciality": "Unicare Hospital",
+      "id": 9
+    },
+    {
+      "name": "lklk",
+      "phone": "1111111111",
+      "email": "hallo@maucher-online.com",
+      "date": "2023-05-18",
+      "location": "Vadodara",
+      "speciality": "Shreeji Hospital",
+      "id": 10
+    },
+    {
+      "name": "lala",
+      "phone": "2222222222",
+      "email": "ab@gmail.com",
+      "date": "2023-05-25",
+      "location": "Surat",
+      "speciality": "Unicare Hospital",
+      "id": 11
+    },
+    {
+      "name": "jajaac",
+      "phone": "5545545454",
+      "email": "hallo@maucher-online.com",
+      "date": "2023-05-26",
+      "location": "Rajkot",
+      "speciality": "Dr. Nisarg Dharaiya's IVF Clinic",
+      "id": 12
+    },
+    {
+      "name": "sacsd",
+      "phone": "9428286892",
+      "email": "hallo@maucher-online.com",
+      "date": "2023-06-09",
+      "location": "Surat",
+      "list": "",
+      "speciality": "Shalby Hospital",
+      "id": 13
     }
   ]
 }

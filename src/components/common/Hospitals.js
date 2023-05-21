@@ -38,7 +38,7 @@ const HospitalList = ({ handleChange, location }) => {
       className="form-control text-area"
       onChange={(e) => handleChange(e)}
       name="speciality"
-      required
+
       // id="exampleFormControlSelect1"
     >
       <option>Choose hospital </option>;
