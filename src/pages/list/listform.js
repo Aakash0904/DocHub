@@ -18,19 +18,58 @@ const ContactForm = () => {
     setPopup({ ...val, [e.target.name]: e.target.value });
   };
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const finalResult = {
+  //     ...val,
+  //     hospitalName: location?.state?.name,
+  //     location: location?.state?.loc,
+  //   };
+
+  //   axios
+  //     .post("http://localhost:3004/homeappointment", finalResult)
+  //     .then((result) => {
+  //       console.log("app_data", result);
+  //       setVal({ name: "", phone: "", date: "", email: "", textarea: "" });
+  //     });
+  // };
   const handleSubmit = (e) => {
+    console.log("lorem");
     e.preventDefault();
-    const finalResult = {
-      ...val,
-      hospitalName: location?.state?.name,
-      location: location?.state?.loc,
+    setVal({
+      name: "",
+      phone: "",
+      email: "",
+      date: "",
+      location: "",
+      list: "",
+      textarea: "",
+    });
+    let config = {
+      method: "post",
+      maxBodyLength: Infinity,
+      url: "http://localhost:1337/api/appointments",
+      data: {
+        date: val?.date,
+        patientName: val?.name,
+        email: val?.email,
+        hospitalName: location?.state?.name,
+        location: location?.state?.loc,
+        description: val?.textarea,
+        phone: val?.phone,
+        isDifferent: true,
+      },
     };
 
     axios
-      .post("http://localhost:3004/homeappointment", finalResult)
-      .then((result) => {
-        console.log("app_data", result);
-        setVal({ name: "", phone: "", date: "", email: "", textarea: "" });
+      .request(config)
+      .then((response) => {
+        console.log("opop", response.data);
+        alert("Appointment Booked Successfully");
+        setVal([]);
+      })
+      .catch((error) => {
+        console.log("errrrror", error);
       });
   };
   const getApi = () => {
@@ -67,6 +106,8 @@ const ContactForm = () => {
             type="tel"
             id="phone"
             name="phone"
+            pattern="[0-9]{10}"
+            maxLength={10}
             value={val?.phone}
             onChange={(e) => handleChange(e)}
             placeholder="Enter your phone number"
@@ -110,6 +151,7 @@ const ContactForm = () => {
           >
             submit
           </button>
+
           <div
             class="modal fade"
             id="exampleModal"

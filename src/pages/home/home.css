@@ -473,8 +473,6 @@ a {
     }
 
     .home_speciality {
-        /* width: 380px; */
-        /* display: flex; */
-        /* justify-content: center; */
+        padding-right: 60px;
     }
 }
