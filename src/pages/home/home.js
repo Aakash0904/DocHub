@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import SpecialityList from "../../components/common/SpecialityList";
 import LocationList from "../../components/common/LocationList";
-
 // import Header from "../../components/common/Header";
 // import logo from "../../assets/images/main_logo.png";
 import banner from "../../assets/Images/banner.png";

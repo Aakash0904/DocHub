@@ -45,7 +45,7 @@ body {
 }
 
 .appoinment_form {
-    flex: 1;
+    /* flex: 1; */
     order: 2;
     max-width: 400px;
     margin-bottom: 20px;
@@ -117,7 +117,7 @@ footer {
     color: white;
 }
 
-input[type=datetime-local]:invalid::-webkit-datetime-edit {
+input[type=date]:invalid::-webkit-datetime-edit {
     color: #999;
 }
 

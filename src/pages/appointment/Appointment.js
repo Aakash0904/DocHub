@@ -13,7 +13,6 @@ const Appointment = () => {
   const handleChange = (e) => {
     setVal({ ...val, [e.target.name]: e.target.value });
   };
-
   const handleSubmit = (e) => {
     console.log("lorem");
     e.preventDefault();

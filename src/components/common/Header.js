@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./header.css";
 import logo from "../../assets/Images/main_logo.png";
 import { Link } from "react-router-dom";
+import Labtest from "../../pages/labtest/Labtest";
 // import { useAuth0 } from "@auth0/auth0-react";
 
 const Header = () => {
@@ -55,12 +56,15 @@ const Header = () => {
               <Link className="nav-link" to="/appointment">
                 Book an appoinment
               </Link>
+              <Link className="nav-link" to="/Labtest">
+                Lab test
+              </Link>
               <Link className="nav-link" to="/blog">
                 Blog
               </Link>
-              <Link className="nav-link" to="/login">
+              {/* <Link className="nav-link" to="/login">
                 login
-              </Link>
+              </Link> */}
             </div>
           </div>
         </nav>

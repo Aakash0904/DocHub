@@ -6,19 +6,20 @@ import "./pages/list/ConList.css";
 import "./components/common/footer.css";
 import "./pages/home/home.css";
 import "./pages/about/about.css";
-import "./pages/appointment/appointment.css";
-// import "./pages/blog/blog.css";
+import "./pages/appointment/appointment.css"; 
+import "./pages/blog/blog.css";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import Appointment from "./pages/appointment/Appointment";
 import ListForm from "./pages/list/listform";
-import Home from "./pages/home/Home";
-import About from "./pages/about/About";
+import Home from "./pages/home/home";
+import About from "./pages/about/about";
 import Blog from "./pages/blog/Blog";
 import Signup from "./pages/privacy/signup";
 import Login from "./pages/privacy/login";
 import Admin from "./pages/admin page/admin";
 import Appoint from "./components/appointment/appoint";
+import Labtest from "./pages/labtest/Labtest";
 
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
@@ -48,6 +49,7 @@ function App() {
           <Route path="home" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="appointment" element={<Appointment />} />
+          <Route path="labtest" element={<Labtest />} />
           <Route path="blog" element={<Blog />} />
           <Route path="conList" element={<ConList />} />
           <Route path="signup" element={<Signup />} />
