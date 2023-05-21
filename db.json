@@ -72,70 +72,70 @@
     },
     {
       "name": "Wellspring IVF & Women's Hospital",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "well-spring.jpg",
       "location": "Ahmedabad",
       "url": "https://goo.gl/maps/A5oDfK7AJioP3onSA"
     },
     {
       "name": "Sumiran Women's Hospital",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "sumiran-women.png",
       "location": "Ahmedabad",
       "url": "https://goo.gl/maps/ZfkBr7jhBLmNEhJDA"
     },
     {
       "name": "Bavishi Fertility Institute",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "bavishi-fertility.png",
       "location": "Surat",
       "url": "https://goo.gl/maps/gjVeSShA62YPi7DYA"
     },
     {
       "name": "Sneh Hospitals and IVF Center",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "Sneh-IVF-hos.png",
       "location": "Ahmedabad",
       "url": "https://goo.gl/maps/QMRZnrSYHeE3m82t6"
     },
     {
       "name": "Shree IVF Clinic",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "sree-ivf.png",
       "location": "Ahmedabad",
       "url": "https://goo.gl/maps/rytiR7L5iCXdVwgJA"
     },
     {
       "name": "Vijaya Maternity Home and Metro IVF Center",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "vijaya-mateernity.png",
       "location": "Ahmedabad",
       "url": "https://goo.gl/maps/Q6mPswBzyApYaMNh6"
     },
     {
       "name": "Sunflower Women's Hospital",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "sunflower-hos.png",
       "location": "Ahmedabad",
       "url": "https://goo.gl/maps/bwMy8DDrDumzRBXLA"
     },
     {
       "name": "Nova IVF Fertility",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "nova-ivf.png",
       "location": "Ahmedabad",
       "url": "https://goo.gl/maps/atLQK6Y5F5EVzpG56"
     },
     {
       "name": "Dr. Nisarg Dharaiya's IVF Clinic",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "Dr.-Nisarg-IVF.png",
       "location": "Rajkot",
       "url": "https://goo.gl/maps/uNHuFz8vfjMLpFhL9"
     },
     {
       "name": "Wings IVF Women's Hospital",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "wings-ivf.png",
       "location": "Ahmedabad",
       "url": "https://goo.gl/maps/KaH7myHXJBJXcjbX9"
@@ -908,15 +908,15 @@
       "speciality": "Dietician",
       "img": "doctor.png",
       "location": "Ahmedabad",
-      "experience": "N/A",
+      "experience": "8+ years",
       "description": "Offers online diet consultations related to weight loss, cholesterol management, diabetes management, obesity, teenage obesity, and diet for hypertension. Aims to provide customized diets to her clients."
     },
     {
       "name": "Dt. Payaal",
       "speciality": "Dietician",
       "img": "doctor.png",
-      "location": "N/A",
-      "experience": "N/A",
+      "location": "Surat",
+      "experience": "5+ years",
       "description": "Specializes in weight loss, weight gain, diabetes care, heart health, child nutrition. Completed Master In Clinical Nutririon from SNDT Women's University."
     },
     {
@@ -932,7 +932,7 @@
       "speciality": "Dietician",
       "img": "doctor.png",
       "location": "Ahmedabad",
-      "experience": "N/A",
+      "experience": "4+ years",
       "description": "Freelance Diet Consultant providing diet and lifestyle counselling for obesity, diabetes and various other metabolic disorders. Also associated with Pharmaceutical companies for conducting various health camps in Ahmedabad as a diet consultant."
     }
   ],
@@ -944,100 +944,69 @@
       "id": 1
     },
     {
-      "name": "ramesh",
-      "email": "jaypanchal0061@gmail.com",
-      "password": "Jay@123",
+      "name": "admin",
+      "email": "meranaam834@gmail.com",
+      "password": "Admin@123",
       "id": 2
     }
   ],
   "homeappointment": [
     {
-      "name": "joshep nilson",
-      "phone": "9428286892",
-      "date": "2023-05-26",
-      "email": "josh45@gmail.com",
-      "textarea": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "message": "o",
-      "hospitalName": "Apex Heart Institute",
+      "name": "Dixit Patel",
+      "phone": "9090909090",
+      "date": "2023-05-22",
+      "email": "dixitpatel@gmail.com",
+      "textarea": "headache",
+      "hospitalName": "Shalby Hospitals",
       "location": "Ahmedabad",
-      "id": 3
-    },
-    {
-      "name": "lol",
-      "phone": "9898989898",
-      "date": "2023-05-24",
-      "email": "hallo@maucher-online.com",
-      "textarea": "lorem",
-      "hospitalName": "Apex Heart Institute",
-      "location": "Ahmedabad",
-      "id": 4
-    },
-    {
-      "name": "patil khushal",
-      "phone": "9428286892",
-      "date": "2023-05-12",
-      "email": "mayurpati7456@gmail.com",
-      "textarea": "popopo",
-      "hospitalName": "Apex Heart Institute",
-      "location": "Ahmedabad",
-      "id": 5
-    },
-    {
-      "name": "jose ",
-      "phone": "1236547896",
-      "date": "2023-05-12",
-      "email": "mpatil79000@gmail.com",
-      "textarea": "popk",
-      "hospitalName": "Apex Heart Institute",
-      "location": "Ahmedabad",
-      "id": 6
+      "id": 9
     }
   ],
   "appointment": [
     {
-      "name": "Kalpesh rajora",
-      "phone": "9898989898",
-      "email": "kalpesh123@gmail.com",
-      "date": "2023-05-19",
+      "name": "Dixit Patel",
+      "phone": "9090909090",
+      "email": "meranaam834@gmail.com",
+      "date": "2023-05-22",
       "location": "Ahmedabad",
-      "speciality": "Nova IVF Fertility",
+      "speciality": "Zydus Hospitals",
+      "id": 10
+    }
+  ],
+  "labAppointment": [
+    {
+      "name": "lab test",
+      "phone": "1234567890",
+      "email": "rajaram@gmail.com",
+      "date": "2023-05-16",
       "id": 1
     },
     {
-      "name": "jose",
-      "phone": "6356625411",
-      "email": "hallo@maucher-online.com",
-      "date": "2023-06-03",
-      "location": "Rajkot",
-      "speciality": "Dr. Nisarg Dharaiya's IVF Clinic",
+      "name": "unipath",
+      "phone": "0987654321",
+      "email": "unipath@gmail.com",
+      "date": "2023-05-16T09:30",
+      "id": 2
+    },
+    {
+      "firstName": "Ravan",
+      "lastName": "Pandit",
+      "phone": "9090909090",
+      "email": "dasananad01@gmail.com",
+      "age": "1000000",
+      "address": "sone ki lanka",
+      "date": "2023-05-16T17:38",
       "id": 3
     },
     {
-      "name": "patil khushal",
-      "phone": "9428286892",
-      "email": "mayurpati7456@gmail.com",
-      "date": "2023-05-18",
-      "location": "Ahmedabad",
-      "speciality": "Wings IVF Women's Hospital",
+      "firstName": "",
+      "lastName": "",
+      "phone": "9090909090",
+      "email": "meranaam834@gmail.com",
+      "age": "226225",
+      "date": "2023-05-16T17:39",
+      "address": "sone ki lankasxa",
       "id": 4
-    },
-    {
-      "name": "patil khushal",
-      "phone": "9428286892",
-      "email": "test1@gmail.com",
-      "date": "2023-05-16",
-      "location": "Ahmedabad",
-      "speciality": "Sterling Hospital",
-      "id": 5
-    },
-    {
-      "name": "patil khushal",
-      "phone": "9428286892",
-      "email": "mayurpati7456@gmail.com",
-      "date": "2023-05-05",
-      "location": "Ahmedabad",
-      "speciality": "Apex Heart Institute",
-      "id": 6
     }
   ]
 }

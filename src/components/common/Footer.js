@@ -39,21 +39,21 @@ const Footer = () => {
               <i className="fa fa-instagram"></i>
             </a>
 
-            <a
+            {/* <a
               className="btn btn-outline-light btn-floating m-1"
               href="#!"
               role="button"
             >
               <i className="fa fa-github"></i>
-            </a>
+            </a> */}
           </section>
         </div>
 
         <div className="text-white text-center p-3 copyright ">
-          © 2023 Copyright:
-          <a className="text-white" href="https://mdbootstrap.com/">
+          © 2023 DocHub. All rights reserved
+          {/* <a className="text-white" href="">
             DocHub
-          </a>
+          </a> */}
         </div>
       </footer>
     </div>

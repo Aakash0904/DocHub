@@ -67,6 +67,8 @@ const ContactForm = () => {
             type="tel"
             id="phone"
             name="phone"
+            pattern="[0-9]{10}"
+                  maxLength={10}
             value={val?.phone}
             onChange={(e) => handleChange(e)}
             placeholder="Enter your phone number"

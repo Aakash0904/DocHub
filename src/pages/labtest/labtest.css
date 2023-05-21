@@ -1,0 +1,199 @@
+:root {
+    --primary-color: rgba(0, 124, 157, 0.9);
+    --secondaryh-color: #015c5a;
+    --helper-color: rgba(0, 160, 156, 0.9);
+    --background-color: rgb(236, 236, 236);
+    --font-color: #212529;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.radiorow{
+    text-align: center;
+}
+.radio-label input[type="radio"] {
+    cursor: pointer;
+    width: 18px;
+    height: 16px;
+    margin: 0px 5px;
+    top: 2px;
+}
+
+.radio-label {
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: black    
+  }
+
+.homeCollection{
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.labAppoint{
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+    border: 4px solid var(--background-color);
+    border-radius: 5px;
+    background-color: var(--background-color);
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.labAppointForm #firstName,
+#lastName, #email, #age,
+textarea, #phone {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.homeCollectiion{
+    color: #015c5a;
+}
+
+.gender{
+    text-align: center;
+    margin: auto;
+}
+
+#address{
+    width: 100%;
+    height: 80px;
+    padding-left: 10px;
+}
+
+.genderlabel{
+    display: inline;
+    margin-right: 20px;
+}
+
+
+.form-check-input,
+.form-check-label {
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+  }
+
+  .dateDetail, .testDetail{
+    margin-top: 10px;
+  }
+
+  .centreDetail{
+    width: 100%;
+  }
+
+#dateTime{
+    width: auto;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputLabel{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.fileUpload{
+    /* width: fit-content; */
+    font-size: 18px;
+    border: none;
+    background-color: var(--background-color);
+}
+.fileUpload:hover{
+    width: fit-content;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+    padding: 4px;
+}
+
+.alertRow{
+    /* margin-top: 10px; */
+    background-color: #a2d8f3;
+    text-align: center;
+
+}
+
+.alertNote{
+    color: black;
+    font-weight: 600;
+}
+
+.alertmessage{
+    margin: 10px auto;
+}
+
+
+.labAppointBtn{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 20px;
+    margin: 10px 45%;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .labAppointForm {
+        margin: auto;
+        flex-wrap: wrap;
+        width: 90%;
+
+    }
+    .radiorow{
+        width: 90%;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  
+
+    .labAppointForm {
+        margin: auto;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .radiorow{
+        width: 90%;
+    }
+}
+
+
+
+@media only screen and (max-width: 800px) {
+   
+
+    .labAppointForm {
+        margin: 10px auto;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .radiorow{
+        width: 90%;
+    }
+}
+
+  

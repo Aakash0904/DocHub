@@ -57,6 +57,7 @@ const ConList = () => {
   console.log("console_data", location);
   return (
     <>
+    <div className="list_holder">
       <section className="border-bottom mt-1">
         <div className="row container-fluid mt-2 mb-1">
           <div className="col-8 banner mx-auto">
@@ -194,10 +195,9 @@ const ConList = () => {
                         ></button>
                       </div>
                       <div className="modal-body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        At cupiditate numquam accusamus impedit soluta
-                        praesentium magnam veniam, unde explicabo ipsa sit nisi
-                        dolore labore eveniet ex, nobis ullam id illum.
+                      Gujarat Cancer & Research Institute (GCRI) established in the year 1972, is a functional autonomous body jointly managed by Government of Gujarat and Gujarat Cancer Society, affliated to B J Medical College. It is also a Regional Cancer Centre of Government of India and getting assistance under National Cancer Control Programme.
+                      <br />
+                      GCRI is a unique example of cooperation between State Government, Central Government, and Non-Government Organization – Gujarat Cancer & Research Institute.
                       </div>
                       <div className="modal-footer">
                         {/* <button type="button" className="btn btn-primary">
@@ -229,7 +229,7 @@ const ConList = () => {
           {docData?.map((item, index) => {
             return (
               <>
-                <div className="col">
+              <div className="col">
                   <div className="card doc_img_card">
                     <img
                       src={DIMG(item.img)}
@@ -288,6 +288,7 @@ const ConList = () => {
           })}
         </div>
       </section>
+      </div>
     </>
   );
 };
