@@ -56,19 +56,19 @@ const Home = () => {
           <div className="col-lg-6 home_speciality ">
             <SpecialityList handleChange={handleChange} />
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6" onChange={handleSearch}>
             <LocationList handleChange={handleChange} />
           </div>
           {/* <div className="col-2 ">
           <button>search</button>
         </div> */}
-          <div className="col-lg-2">
+          {/* <div className="col-lg-2">
             <div className="srch">
               <a role="button" onClick={handleSearch}>
                 <i className="fa fa-search"></i>
               </a>
             </div>{" "}
-          </div>
+          </div> */}
         </div>
       </div>
       {/* <div className="name">

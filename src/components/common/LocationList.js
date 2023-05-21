@@ -7,11 +7,11 @@ const LocationList = (props) => {
   const getHospitalData = () => {
     axios.get("http://localhost:3004/hospitals").then((result) => {
       console.log("here's the data", result.data);
-      const locationArr = result.data.map((item, index) => {
+      const specilalityArr = result.data.map((item, index) => {
         return item.location;
       });
-      console.log("console_data", [...new Set(locationArr)]);
-      setData([...new Set(locationArr)]);
+      console.log("console_data", [...new Set(specilalityArr)]);
+      setData([...new Set(specilalityArr)]);
     });
   };
 
@@ -23,14 +23,14 @@ const LocationList = (props) => {
     <div className="">
       <select
         className="form-control text-area"
-        onChange={(e) => props.handleChange(e)}
         name="location"
+        onChange={(e) => props.handleChange(e)}
 
         // id="exampleFormControlSelect1"
       >
-        {/* <option selected={props.isblank ? true : false}>
+        <option selected={props.isblank ? true : false}>
           Choose location{" "}
-        </option> */}
+        </option>
         {data &&
           data?.map((item, index) => {
             return <option>{item}</option>;

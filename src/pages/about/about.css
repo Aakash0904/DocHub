@@ -43,11 +43,10 @@ body {
     margin-top: 25px;
 }
 
-.bannertext h1 {
-    text-align: center;
+.heading h1 {
     font-size: 50px;
     /* font-weight: 550; */
-    color: var(--helper-color);
+    color: var(--primary-color);
     margin-bottom: 10px;
 }
 

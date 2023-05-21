@@ -1,54 +1,66 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./appointment.css";
+import SpecialityList from "../../components/common/SpecialityList";
+import DoctorsList from "../../components/common/DoctorsList";
 import Hospitals from "../../components/common/Hospitals";
 import appoint_bg_doc from "../../assets/Images/appoint_bg_doc.png";
 import LocationList from "../../components/common/LocationList";
 // import HospitalList from "../../components/common/Hospitals";
 const Appointment = () => {
   const [val, setVal] = useState({});
-
+  const [name, setName] = useState([]);
+  const [nameError, setNameError] = useState([]);
+  const [email, setEmail] = useState([]);
+  const [emailError, setEmailError] = useState([]);
+  const [phone, setPhone] = useState([]);
+  const [phoneError, setPhoneError] = useState([]);
   const [isblanklocation, setIsblanklocation] = useState(false);
+  const validateEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+  const validatephone = (phone) => {
+    const regex = /"^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"/;
 
+    return regex.test(phone);
+  };
+  // const validateName = () =>{
+
+  // }
   const handleChange = (e) => {
     setVal({ ...val, [e.target.name]: e.target.value });
+    // handleFirstDropdownChange(event);
   };
 
   const handleSubmit = (e) => {
-    console.log("lorem");
     e.preventDefault();
-    setVal({
-      name: "",
-      phone: "",
-      email: "",
-      date: "",
-      location: "",
-      list: "",
-    });
-    let config = {
-      method: "post",
-      maxBodyLength: Infinity,
-      url: "http://localhost:1337/api/appointments",
-      data: {
-        date: val?.date,
-        patientName: val?.name,
-        email: val?.email,
-        hospitalName: val?.hospitals,
-        location: val?.location,
-        phone: val?.phone,
-      },
-    };
-
-    axios
-      .request(config)
-      .then((response) => {
-        console.log("opop", response.data);
-        alert("Appointment Booked Successfully");
-        setVal([]);
-      })
-      .catch((error) => {
-        console.log("errrrr", error);
+    axios.post("http://localhost:3004/appointment", val).then((result) => {
+      console.log("result ", result);
+      // setVal(result.data);
+      e.preventDefault();
+      setEmailError("");
+      setPhoneError("");
+      setVal({
+        name: "",
+        phone: "",
+        email: "",
+        date: "",
+        location: "",
+        list: "",
+        // speciality: "",
       });
+      setIsblanklocation(true);
+      if (!validateEmail(email)) {
+        setEmailError("Please enter a valid email address");
+      }
+      if (!validatephone(phone)) {
+        setPhoneError("Plese enter a valid phone number");
+      }
+      if (name === "") {
+        setNameError("please enter your name");
+      }
+    });
   };
 
   return (
@@ -71,6 +83,7 @@ const Appointment = () => {
                   name="name"
                   placeholder="Enter patient's name"
                   onChange={(e) => {
+                    setName(e.target.value);
                     handleChange(e);
                   }}
                   required
@@ -86,6 +99,7 @@ const Appointment = () => {
                   value={val?.phone}
                   placeholder="Enter your phone number"
                   onChange={(e) => {
+                    setPhone(e.target.value);
                     handleChange(e);
                   }}
                   required
@@ -99,10 +113,12 @@ const Appointment = () => {
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                   placeholder="Enter your email address"
                   onChange={(e) => {
+                    setEmail(e.target.value);
                     handleChange(e);
                   }}
                   required
                 />
+                {/* {emailError && <p>{emailError}</p>} */}
 
                 <input
                   type="date"
@@ -130,9 +146,17 @@ const Appointment = () => {
                   location={val.location}
                   required
                 />
-                <button type="submit" className="appointment_btn">
-                  Book Appointment
-                </button>
+                {/* <DoctorsList
+                  handleChange={handleChange}
+                  speciality={val.speciality}
+                /> */}
+
+                <input
+                  type="submit"
+                  className="appointment_btn"
+                  // onClick={handleSubmit}
+                  value="Book Appointment"
+                />
               </form>
             </div>
           </div>
