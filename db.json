@@ -1012,16 +1012,6 @@
       "hospitalName": "Sterling Hospital",
       "location": "Ahmedabad",
       "id": 8
-    },
-    {
-      "name": "laksla",
-      "phone": "9999999999",
-      "date": "2023-06-02",
-      "email": "mpatil79000@gmail.com",
-      "textarea": "sswwf",
-      "hospitalName": "HCG Cancer Centre",
-      "location": "Ahmedabad",
-      "id": 9
     }
   ],
   "appointment": [
@@ -1069,6 +1059,61 @@
       "location": "Ahmedabad",
       "speciality": "Apex Heart Institute",
       "id": 6
+    }
+  ],
+  "labAppointment": [
+    {
+      "firstName": "Ravan",
+      "lastName": "Pandit",
+      "phone": "9999999999",
+      "email": "dasananad01@gmail.com",
+      "age": "100",
+      "address": "sone ki lanka",
+      "date": "2023-05-21T18:19",
+      "id": 1
+    },
+    {
+      "firstName": "Ravan",
+      "lastName": "Pandit",
+      "phone": "9999999999",
+      "email": "meranaam834@gmail.com",
+      "age": "88",
+      "inlineRadioOptions": "gender",
+      "address": "sone ki lanka",
+      "date": "2023-05-13T18:45",
+      "id": 2
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "phone": "9898989898",
+      "email": "dasananad01@gmail.com",
+      "age": "97",
+      "date": "2023-05-27T22:48",
+      "address": "wcwcw",
+      "id": 3
+    },
+    {
+      "gender": "male",
+      "firstName": "Ravan",
+      "lastName": "Pandit",
+      "phone": "9999999999",
+      "email": "meranaam@gmail.com",
+      "age": "4",
+      "address": "wdw",
+      "date": "2023-06-03T18:53",
+      "id": 4
+    },
+    {
+      "firstName": "Ravan",
+      "lastName": "Pandit",
+      "gender": "female",
+      "phone": "9090909090",
+      "email": "meranaam834@gmail.com",
+      "age": "22",
+      "address": "cscs",
+      "date": "2023-05-27T18:59",
+      "id": 5
     }
   ]
 }

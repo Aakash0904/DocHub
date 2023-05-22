@@ -19,6 +19,8 @@ import Signup from "./pages/privacy/signup";
 import Login from "./pages/privacy/login";
 import Admin from "./pages/admin page/admin";
 import Appoint from "./components/appointment/appoint";
+import Labtest from "./pages/labtest/Labtest";
+
 
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
@@ -48,6 +50,7 @@ function App() {
           <Route path="home" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="appointment" element={<Appointment />} />
+          <Route path="labtest" element={<Labtest />} />
           <Route path="blog" element={<Blog />} />
           <Route path="conList" element={<ConList />} />
           <Route path="signup" element={<Signup />} />
