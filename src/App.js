@@ -12,8 +12,10 @@ import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import Appointment from "./pages/appointment/Appointment";
 import ListForm from "./pages/list/listform";
-import Home from "./pages/home/Home";
-import About from "./pages/about/About";
+import Home from "./pages/home/home";
+import Labtest from "./pages/labtest/Labtest";
+
+import About from "./pages/about/about";
 import Blog from "./pages/blog/Blog";
 import Signup from "./pages/privacy/signup";
 import Login from "./pages/privacy/login";
@@ -49,6 +51,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="appointment" element={<Appointment />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="labtest" element={<Labtest />} />
           <Route path="conList" element={<ConList />} />
           <Route path="signup" element={<Signup />} />
           <Route path="login" element={<Login />} />
