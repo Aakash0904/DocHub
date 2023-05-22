@@ -273,14 +273,9 @@ function Labtest() {
               </div>
             </div>
 
-            <div className="row  testDetail">
-              <div className="col-lg-12">
-                <h4>Test Details</h4>
-              </div>
-            </div>
-
             <div className="row">
               <div className="col-lg-5">
+                <h4>Test Details</h4>
                 <select
                   value={selectedOption}
                   onChange={handleOptionChange}
@@ -297,7 +292,7 @@ function Labtest() {
                   <option value="option5">Body profile excutive - Male</option>
                 </select>
               </div>
-              <div className="col-lg-7">
+              {/* <div className="col-lg-7">
                 <label for="fileInput" className="inputLabel">
                   Select doctor's prescription:
                 </label>
@@ -305,17 +300,17 @@ function Labtest() {
                 <button type="submit" className="fileUpload">
                   Upload
                 </button>
-              </div>
+              </div> */}
             </div>
 
-            <div className="row alertRow">
+            {/* <div className="row alertRow">
               <div className="col-lg-12">
                 <p className="alertmessage">
                   <span className="alertNote">Note:</span> You will receive a
                   email containing appointment details from our side.
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <div className="row">
               <div className="col-lg-12">
@@ -491,14 +486,14 @@ function Labtest() {
               </div>
             </div>
 
-            <div className="row  dateDetail">
+            {/* <div className="row  dateDetail">
               <div className="col-lg-12">
-                <h4>Date/Timing and lab Details</h4>
               </div>
-            </div>
+            </div> */}
 
             <div className="row">
               <div className="col-lg-6">
+                <h4>Date/Timing and lab Details</h4>
                 <input
                   type="datetime-local"
                   onChange={(e) => handleChange(e)}
@@ -509,16 +504,18 @@ function Labtest() {
                   required
                 />
               </div>
-            </div>
+              {/* </div> */}
 
-            <div className="row  testDetail">
-              <div className="col-lg-12">
+              {/* <div className="row  testDetail"> */}
+              {/* <div className="col-6">
                 <h4>Test Details</h4>
-              </div>
-            </div>
+              </div> */}
+              {/* </div> */}
 
-            <div className="row">
+              {/* <div className="row"> */}
               <div className="col-lg-5">
+                <h4>Test Details</h4>
+
                 <select
                   value={selectedOption}
                   onChange={handleOptionChange}
@@ -536,7 +533,7 @@ function Labtest() {
                 </select>
               </div>
 
-              <div className="col-lg-7">
+              {/* <div className="col-lg-7">
                 <label for="fileInput" className="inputLabel">
                   Select doctor's prescription:
                 </label>
@@ -548,20 +545,20 @@ function Labtest() {
                 >
                   Preview
                 </button>
-              </div>
+              </div> */}
             </div>
 
-            <div className="row alertRow">
+            {/* <div className="row alertRow">
               <div className="col-lg-12">
                 <p className="alertmessage">
                   <span className="alertNote">Note:</span> You will receive a
                   email containing appointment details from our side.
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <div className="row">
-              <div className="col-lg-12">
+              <div className="col">
                 <input
                   type="submit"
                   className="labAppointBtn"

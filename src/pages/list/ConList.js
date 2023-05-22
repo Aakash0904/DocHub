@@ -279,7 +279,7 @@ const ConList = () => {
                           <div className="modal-footer">
                             <button
                               type="button"
-                              className="btn btn-primary"
+                              className="btn modal_btn"
                               data-bs-dismiss="modal"
                             >
                               <Link to={"/listform"}>Book Appointment</Link>

@@ -36,12 +36,11 @@ const Admin = () => {
         console.log(error);
         alert(error.message);
       });
-      axios.get("http://localhost:3004/labAppointment").then((result) => {
+    axios.get("http://localhost:3004/labAppointment").then((result) => {
       setFormData(result.data);
       console.log("adata", result.data);
     });
-  
-    };
+  };
   const handleDelete = async (id) => {
     const token = localStorage.getItem("token");
     if (!token || token == null) {
@@ -174,6 +173,9 @@ const Admin = () => {
             })}
           </tbody>
         </Table>
+
+        <h1 className="mt-5">Specific hospital appointment details</h1>
+
         <Table className="mt-4" bordered borderless hover responsive size="md">
           <thead>
             <tr>
@@ -217,19 +219,25 @@ const Admin = () => {
             })}
           </tbody>
         </Table>
+
+        <h1 className="mt-5">Home collection lab appointment details</h1>
+
         <Table className="mt-4" bordered borderless hover responsive size="md">
           <thead>
             <tr>
               <th>#</th>
-              <th>Hospital</th>
-              <th>Name</th>
+              <th>Home/Opd</th>
+              <th>First Name</th>
+              <th>Last Name</th>
               <th>Phone</th>
               <th>Email</th>
+              <th>Age</th>
               <th>Date</th>
-              <th>Location</th>
-              <th>Delete</th>
+              <th>Address</th>
               <th>gender</th>
-
+              <th>Lab</th>
+              <th>Test</th>
+              {/* <th></th> */}
             </tr>
           </thead>
           <tbody>
@@ -237,6 +245,7 @@ const Admin = () => {
               <>
                 <tr>
                   <th scope="row">{index + 1}</th>
+                  <td>{cdata.collection}</td>
                   <td>{cdata.firstName}</td>
                   <td>{cdata.lastName}</td>
                   <td>{cdata.phone}</td>
@@ -245,6 +254,8 @@ const Admin = () => {
                   <td>{cdata.address}</td>
                   <td>{cdata.date}</td>
                   <td>{cdata.gender}</td>
+                  <td>{cdata.centreDetail}</td>
+                  <td>{cdata.testDetail}</td>
 
                   <td>
                     <button

@@ -22,6 +22,13 @@
       "url": "https://goo.gl/maps/zCzkfvtrNWJnXf9R9"
     },
     {
+      "name": "HCG Cancer Centre",
+      "speciality": "Oncology",
+      "img": "hcg-logo.png",
+      "location": "Vadodara",
+      "url": "https://goo.gl/maps/zCzkfvtrNWJnXf9R9"
+    },
+    {
       "name": "CIMS Hospital",
       "speciality": "Oncology",
       "img": "cims_logo.png",
@@ -43,10 +50,24 @@
       "url": "https://goo.gl/maps/SvR1S9anKt1ioxQ3A"
     },
     {
+      "name": "Zydus Hospitals and Healthcare Research Pvt. Ltd.",
+      "speciality": "Oncology",
+      "img": "zydus.png",
+      "location": "Vadodara",
+      "url": "https://goo.gl/maps/SvR1S9anKt1ioxQ3A"
+    },
+    {
       "name": "Shalby Hospitals",
       "speciality": "Oncology",
       "img": "Shalby-Hospitals-logo.jpg",
       "location": "Ahmedabad",
+      "url": "https://goo.gl/maps/TL7nVzw8xbJDEDoC8"
+    },
+    {
+      "name": "Shalby Hospitals",
+      "speciality": "Oncology",
+      "img": "Shalby-Hospitals-logo.jpg",
+      "location": "Surat",
       "url": "https://goo.gl/maps/TL7nVzw8xbJDEDoC8"
     },
     {
@@ -72,70 +93,70 @@
     },
     {
       "name": "Wellspring IVF & Women's Hospital",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "well-spring.jpg",
       "location": "Ahmedabad",
       "url": "https://goo.gl/maps/A5oDfK7AJioP3onSA"
     },
     {
       "name": "Sumiran Women's Hospital",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "sumiran-women.png",
       "location": "Ahmedabad",
       "url": "https://goo.gl/maps/ZfkBr7jhBLmNEhJDA"
     },
     {
       "name": "Bavishi Fertility Institute",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "bavishi-fertility.png",
       "location": "Surat",
       "url": "https://goo.gl/maps/gjVeSShA62YPi7DYA"
     },
     {
       "name": "Sneh Hospitals and IVF Center",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "Sneh-IVF-hos.png",
       "location": "Ahmedabad",
       "url": "https://goo.gl/maps/QMRZnrSYHeE3m82t6"
     },
     {
       "name": "Shree IVF Clinic",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "sree-ivf.png",
       "location": "Ahmedabad",
       "url": "https://goo.gl/maps/rytiR7L5iCXdVwgJA"
     },
     {
       "name": "Vijaya Maternity Home and Metro IVF Center",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "vijaya-mateernity.png",
       "location": "Ahmedabad",
       "url": "https://goo.gl/maps/Q6mPswBzyApYaMNh6"
     },
     {
       "name": "Sunflower Women's Hospital",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "sunflower-hos.png",
       "location": "Ahmedabad",
       "url": "https://goo.gl/maps/bwMy8DDrDumzRBXLA"
     },
     {
       "name": "Nova IVF Fertility",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "nova-ivf.png",
       "location": "Ahmedabad",
       "url": "https://goo.gl/maps/atLQK6Y5F5EVzpG56"
     },
     {
       "name": "Dr. Nisarg Dharaiya's IVF Clinic",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "Dr.-Nisarg-IVF.png",
       "location": "Rajkot",
       "url": "https://goo.gl/maps/uNHuFz8vfjMLpFhL9"
     },
     {
       "name": "Wings IVF Women's Hospital",
-      "speciality": "IVF",
+      "speciality": "Gynecology",
       "img": "wings-ivf.png",
       "location": "Ahmedabad",
       "url": "https://goo.gl/maps/KaH7myHXJBJXcjbX9"
@@ -176,10 +197,24 @@
       "url": "https://goo.gl/maps/SvR1S9anKt1ioxQ3A"
     },
     {
+      "name": "Zydus Hospitals and Healthcare Research Pvt. Ltd.",
+      "speciality": "Cardiology",
+      "img": "zydus.png",
+      "location": "Vadodara",
+      "url": "https://goo.gl/maps/SvR1S9anKt1ioxQ3A"
+    },
+    {
       "name": "Shalby Hospitals",
       "speciality": "Cardiology",
       "img": "Shalby-Hospitals-logo.jpg",
       "location": "Ahmedabad",
+      "url": "https://goo.gl/maps/TL7nVzw8xbJDEDoC8"
+    },
+    {
+      "name": "Shalby Hospitals",
+      "speciality": "Cardiology",
+      "img": "Shalby-Hospitals-logo.jpg",
+      "location": "Surat",
       "url": "https://goo.gl/maps/TL7nVzw8xbJDEDoC8"
     },
     {
@@ -218,10 +253,24 @@
       "url": "https://goo.gl/maps/TL7nVzw8xbJDEDoC8"
     },
     {
+      "name": "Shalby Hospitals",
+      "speciality": "orthology",
+      "img": "Shalby-Hospitals-logo.jpg",
+      "location": "Surat",
+      "url": "https://goo.gl/maps/TL7nVzw8xbJDEDoC8"
+    },
+    {
       "name": "HCG Hospital",
       "speciality": "orthology",
       "img": "hcg-logo.png",
       "location": "Ahmedabad",
+      "url": "https://goo.gl/maps/zCzkfvtrNWJnXf9R9"
+    },
+    {
+      "name": "HCG Hospital",
+      "speciality": "orthology",
+      "img": "hcg-logo.png",
+      "location": "Vadodara",
       "url": "https://goo.gl/maps/zCzkfvtrNWJnXf9R9"
     },
     {
@@ -257,6 +306,13 @@
       "speciality": "orthology",
       "img": "zydus.png",
       "location": "Ahmedabad",
+      "url": "https://goo.gl/maps/SvR1S9anKt1ioxQ3A"
+    },
+    {
+      "name": "Zydus Hospitals and Healthcare Research Pvt. Ltd.",
+      "speciality": "orthology",
+      "img": "zydus.png",
+      "location": "Vadodara",
       "url": "https://goo.gl/maps/SvR1S9anKt1ioxQ3A"
     },
     {
@@ -302,10 +358,24 @@
       "url": "https://goo.gl/maps/zCzkfvtrNWJnXf9R9"
     },
     {
+      "name": "HCG Hospital",
+      "speciality": "Neurology",
+      "img": "hcg-logo.png",
+      "location": "Vadodara",
+      "url": "https://goo.gl/maps/zCzkfvtrNWJnXf9R9"
+    },
+    {
       "name": "Zydus Hospitals and Healthcare Research Pvt. Ltd.",
       "speciality": "Neurology",
       "img": "zydus.png",
       "location": "Ahmedabad",
+      "url": "https://goo.gl/maps/SvR1S9anKt1ioxQ3A"
+    },
+    {
+      "name": "Zydus Hospitals and Healthcare Research Pvt. Ltd.",
+      "speciality": "Neurology",
+      "img": "zydus.png",
+      "location": "Vadodara",
       "url": "https://goo.gl/maps/SvR1S9anKt1ioxQ3A"
     },
     {
@@ -320,6 +390,13 @@
       "speciality": "Neurology",
       "img": "Shalby-Hospitals-logo.jpg",
       "location": "Ahmedabad",
+      "url": "https://goo.gl/maps/TL7nVzw8xbJDEDoC8"
+    },
+    {
+      "name": "Shalby Hospitals",
+      "speciality": "Neurology",
+      "img": "Shalby-Hospitals-logo.jpg",
+      "location": "Surat",
       "url": "https://goo.gl/maps/TL7nVzw8xbJDEDoC8"
     },
     {
@@ -442,6 +519,13 @@
       "url": "https://goo.gl/maps/zCzkfvtrNWJnXf9R9"
     },
     {
+      "name": "HCG Hospital",
+      "speciality": "nephrology",
+      "img": "hcg-logo.png",
+      "location": "Vadodara",
+      "url": "https://goo.gl/maps/zCzkfvtrNWJnXf9R9"
+    },
+    {
       "name": "Narayana Multispeciality Hospital",
       "speciality": "nephrology",
       "img": "narayana-hos-logo.png",
@@ -456,10 +540,24 @@
       "url": "https://goo.gl/maps/aQs4fyBBx6LhdfDH7"
     },
     {
+      "name": "Zydus Hospitals and Healthcare Research Pvt. Ltd.",
+      "speciality": "nephrology",
+      "img": "zydus.png",
+      "location": "Vadodara",
+      "url": "https://goo.gl/maps/aQs4fyBBx6LhdfDH7"
+    },
+    {
       "name": "Shalby Hospitals",
       "speciality": "nephrology",
       "img": "Shalby-Hospitals-logo.jpg",
       "location": "Ahmedabad",
+      "url": "https://goo.gl/maps/TL7nVzw8xbJDEDoC8"
+    },
+    {
+      "name": "Shalby Hospitals",
+      "speciality": "nephrology",
+      "img": "Shalby-Hospitals-logo.jpg",
+      "location": "Surat",
       "url": "https://goo.gl/maps/TL7nVzw8xbJDEDoC8"
     },
     {
@@ -505,6 +603,13 @@
       "url": "https://goo.gl/maps/TL7nVzw8xbJDEDoC8"
     },
     {
+      "name": "Shalby Hospitals",
+      "speciality": "urology",
+      "img": "Shalby-Hospitals-logo.jpg",
+      "location": "Surat",
+      "url": "https://goo.gl/maps/TL7nVzw8xbJDEDoC8"
+    },
+    {
       "name": "Sterling Hospitals",
       "speciality": "urology",
       "img": "sterling.png",
@@ -530,6 +635,13 @@
       "speciality": "urology",
       "img": "zydus.png",
       "location": "Ahmedabad",
+      "url": "https://goo.gl/maps/aQs4fyBBx6LhdfDH7"
+    },
+    {
+      "name": "Zydus Hospitals",
+      "speciality": "urology",
+      "img": "zydus.png",
+      "location": "Vadodara",
       "url": "https://goo.gl/maps/aQs4fyBBx6LhdfDH7"
     },
     {
@@ -575,6 +687,13 @@
       "url": "https://goo.gl/maps/zCzkfvtrNWJnXf9R9"
     },
     {
+      "name": "HCG Cancer Centre",
+      "speciality": "surgeons",
+      "img": "hcg-logo.png",
+      "location": "Vadodara",
+      "url": "https://goo.gl/maps/zCzkfvtrNWJnXf9R9"
+    },
+    {
       "name": "Apollo Hospitals",
       "speciality": "surgeons",
       "img": "apollo-hospital.png",
@@ -600,6 +719,13 @@
       "speciality": "surgeons",
       "img": "zydus.png",
       "location": "Ahmedabad",
+      "url": "https://goo.gl/maps/aQs4fyBBx6LhdfDH7"
+    },
+    {
+      "name": "Zydus Hospitals",
+      "speciality": "surgeons",
+      "img": "zydus.png",
+      "location": "Vadodara",
       "url": "https://goo.gl/maps/aQs4fyBBx6LhdfDH7"
     },
     {
@@ -909,14 +1035,14 @@
       "speciality": "Dietician",
       "img": "doctor.png",
       "location": "Ahmedabad",
-      "experience": "N/A",
+      "experience": "5 years",
       "description": "Offers online diet consultations related to weight loss, cholesterol management, diabetes management, obesity, teenage obesity, and diet for hypertension. Aims to provide customized diets to her clients."
     },
     {
       "name": "Dt. Payaal",
       "speciality": "Dietician",
       "img": "doctor.png",
-      "location": "N/A",
+      "location": "Ahmedabad",
       "experience": "N/A",
       "description": "Specializes in weight loss, weight gain, diabetes care, heart health, child nutrition. Completed Master In Clinical Nutririon from SNDT Women's University."
     },
@@ -972,46 +1098,6 @@
       "hospitalName": "Apex Heart Institute",
       "location": "Ahmedabad",
       "id": 4
-    },
-    {
-      "name": "patil khushal",
-      "phone": "9428286892",
-      "date": "2023-05-12",
-      "email": "mayurpati7456@gmail.com",
-      "textarea": "popopo",
-      "hospitalName": "Apex Heart Institute",
-      "location": "Ahmedabad",
-      "id": 5
-    },
-    {
-      "name": "jose ",
-      "phone": "1236547896",
-      "date": "2023-05-12",
-      "email": "mpatil79000@gmail.com",
-      "textarea": "popk",
-      "hospitalName": "Apex Heart Institute",
-      "location": "Ahmedabad",
-      "id": 6
-    },
-    {
-      "name": "patil khushall",
-      "phone": "9428286892",
-      "date": "2023-05-26",
-      "email": "mayurpatil7456@gmail.com",
-      "textarea": "zuAwdc<FSJ",
-      "hospitalName": "HCG Cancer Centre",
-      "location": "Ahmedabad",
-      "id": 7
-    },
-    {
-      "name": "kali",
-      "phone": "5454545454",
-      "date": "2023-05-24",
-      "email": "mayurpatil7456@gmail.com",
-      "textarea": "dxqwfvqf",
-      "hospitalName": "Sterling Hospital",
-      "location": "Ahmedabad",
-      "id": 8
     }
   ],
   "appointment": [
@@ -1032,88 +1118,21 @@
       "location": "Rajkot",
       "speciality": "Dr. Nisarg Dharaiya's IVF Clinic",
       "id": 3
-    },
-    {
-      "name": "patil khushal",
-      "phone": "9428286892",
-      "email": "mayurpati7456@gmail.com",
-      "date": "2023-05-18",
-      "location": "Ahmedabad",
-      "speciality": "Wings IVF Women's Hospital",
-      "id": 4
-    },
-    {
-      "name": "patil khushal",
-      "phone": "9428286892",
-      "email": "test1@gmail.com",
-      "date": "2023-05-16",
-      "location": "Ahmedabad",
-      "speciality": "Sterling Hospital",
-      "id": 5
-    },
-    {
-      "name": "patil khushal",
-      "phone": "9428286892",
-      "email": "mayurpati7456@gmail.com",
-      "date": "2023-05-05",
-      "location": "Ahmedabad",
-      "speciality": "Apex Heart Institute",
-      "id": 6
     }
   ],
   "labAppointment": [
     {
+      "collection": "option1",
       "firstName": "Ravan",
       "lastName": "Pandit",
       "phone": "9999999999",
       "email": "dasananad01@gmail.com",
       "age": "100",
       "address": "sone ki lanka",
-      "date": "2023-05-21T18:19",
+      "date": "2023-05-22T15:28",
+      "centreDetail": "unipath",
+      "testDetail": "basic2",
       "id": 1
-    },
-    {
-      "firstName": "Ravan",
-      "lastName": "Pandit",
-      "phone": "9999999999",
-      "email": "meranaam834@gmail.com",
-      "age": "88",
-      "inlineRadioOptions": "gender",
-      "address": "sone ki lanka",
-      "date": "2023-05-13T18:45",
-      "id": 2
-    },
-    {
-      "firstName": "",
-      "lastName": "",
-      "phone": "9898989898",
-      "email": "dasananad01@gmail.com",
-      "age": "97",
-      "date": "2023-05-27T22:48",
-      "address": "wcwcw",
-      "id": 3
-    },
-    {
-      "gender": "male",
-      "firstName": "Ravan",
-      "lastName": "Pandit",
-      "phone": "9999999999",
-      "email": "meranaam@gmail.com",
-      "age": "4",
-      "address": "wdw",
-      "date": "2023-06-03T18:53",
-      "id": 4
-    },
-    {
-      "firstName": "Ravan",
-      "lastName": "Pandit",
-      "gender": "female",
-      "phone": "9090909090",
-      "email": "meranaam834@gmail.com",
-      "age": "22",
-      "address": "cscs",
-      "date": "2023-05-27T18:59",
-      "id": 5
-    }
+    } 
   ]
 }

@@ -19,6 +19,7 @@
 
 .list_btn {
     text-align: center;
+    /* color: #ffffff;  */
 }
 
 .doc_img_card {
@@ -60,7 +61,7 @@
 }
 
 .modal_btn:hover {
-    background-color: var(--helper-color);
+    background-color: var(--primary-color);
     color: #ffffff;
 }
 
